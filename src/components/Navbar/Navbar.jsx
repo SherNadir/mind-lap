@@ -91,7 +91,7 @@ export const Navbar = () => {
                         height={80}
                       />
                       <div className="flex items-center">
-                        <p className="mx-2 text-4xl text-grey-400">
+                        <p className="mx-2 text-5xl text-grey-400">
                           James Bond
                         </p>
                         <ArrowDownIcon className="w-4 h-4" aria-hidden="true" />

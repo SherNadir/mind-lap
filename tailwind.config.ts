@@ -33,20 +33,24 @@ const config: Config = {
       },
       fontSize: {
         "4xl": [
-          "1.5rem", //24px
+          "1.188rem", //24px
           {
-            lineHeight: "1.62rem", //17px
             fontWeight: "600",
           },
         ],
         "5xl": [
-          "1.188rem", //19px
+          "1.5rem", //19px
           {
-            lineHeight: "1.813rem",
             fontWeight: "600",
           },
         ],
         "6xl": [
+          "2.5rem", //40px
+          {
+            fontWeight: "800",
+          },
+        ],
+        "7xl": [
           "4rem", //64px
           {
             fontWeight: "800",
@@ -59,7 +63,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       boxShadow: {
-        sm: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+        sm: "0 0 8px 8px rgb(117 212 129 / 0.2)",
         md: "0 2px 4px 0 rgba(0, 0, 0, 0.1)",
         "3xl": "0 2px 11px 0px rgba(160, 152, 211, 0.2)",
         xl: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
@@ -73,9 +77,12 @@ const config: Config = {
           DEFAULT: "#75D481",
         },
         dark: {
+          light: "#070707",
           DEFAULT: "#424242",
           100: "#16171C",
-          200: "#4F4F4F"
+          200: "#4F4F4F",
+          300: "#090914",
+          400: "#18181B",
         },
         warning: {
           DEFAULT: "#FF6B2C",
@@ -84,7 +91,7 @@ const config: Config = {
           DEFAULT: "#EB3838",
         },
         grey: {
-          light: "#F3F5F8",
+          light: "#BEBEBE",
         },
         white: {
           DEFAULT: "#FFFFFF",
