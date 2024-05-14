@@ -2,7 +2,7 @@
 
 import React, { Fragment, useState } from "react";
 import { Logo } from "@/svgs/icons";
-import { poppins } from "@/app/fonts";
+import { poppins } from "@/app/[lng]/fonts";
 import {
   Disclosure,
   DisclosureButton,
@@ -19,8 +19,10 @@ import Link from "next/link";
 import cls from "classnames";
 import { ArrowDownIcon } from "@/svgs/icons";
 import { navigation } from "./data";
+import { Trans } from "react-i18next";
+import { languages } from "@/app/i18n/settings";
 
-export const Navbar = () => {
+export const Navbar = ({ lng }) => {
   const [activeLink, setActiveLink] = useState("/");
   const menuItems = ["Update Profile Image", "Account Settings", "Log Out"];
   return (
@@ -41,7 +43,7 @@ export const Navbar = () => {
               <div>
                 <Logo />
               </div>
-              <div className="hidden lg:block">
+              <div className="hidden lg:flex items-center gap-4">
                 <ul className="flex gap-8">
                   <li className="text-primary font-bold text-sm cursor-pointer">
                     Home
@@ -62,8 +64,19 @@ export const Navbar = () => {
                     Team
                   </li>
                 </ul>
+                <div className="bg-primary w-[60px] h-8 rounded-full flex items-center  justify-center text-white">
+                  {languages
+                    .filter((l) => lng !== l)
+                    .map((l) => {
+                      return (
+                        <span key={l}>
+                          <Link href={`/${l}`}>{l}</Link>
+                        </span>
+                      );
+                    })}
+                </div>
               </div>
-              <div className=" gap-5 hidden lg:flex">
+              <div className=" gap-5 hidden lg:flex items-center">
                 <button
                   className={`${poppins.className} text-sm font-medium text-dark`}
                 >
