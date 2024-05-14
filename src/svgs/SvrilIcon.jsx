@@ -23,8 +23,8 @@ export const SvrilIcon = (props) => {
           y2="-5.60793"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D9B227" />
-          <stop offset="1" stop-color="#FD4141" />
+          <stop stopColor="#D9B227" />
+          <stop offset="1" stopColor="#FD4141" />
         </linearGradient>
       </defs>
     </svg>

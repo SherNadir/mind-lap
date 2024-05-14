@@ -14,14 +14,14 @@ export const CircleIcon = (props) => {
           fill="#75D481"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M17.3347 31.1653C10.0312 29.8127 4.5 23.4095 4.5 15.7143C4.5 7.03553 11.5355 0 20.2143 0C27.9095 0 34.3128 5.53118 35.6653 12.8347C34.7318 12.6618 33.7693 12.5714 32.7857 12.5714C24.107 12.5714 17.0714 19.607 17.0714 28.2857C17.0714 29.2693 17.1618 30.2318 17.3347 31.1653Z"
           fill="#75D481"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M20.2141 31.4289C28.8928 31.4289 35.9284 24.3933 35.9284 15.7146C35.9284 14.731 35.838 13.7685 35.6651 12.835C42.9686 14.1875 48.4998 20.5908 48.4998 28.286C48.4998 36.9648 41.4643 44.0003 32.7855 44.0003C25.0903 44.0003 18.687 38.4691 17.3345 31.1656C18.268 31.3385 19.2305 31.4289 20.2141 31.4289Z"
           fill="#75D481"
         />
@@ -34,9 +34,9 @@ export const CircleIcon = (props) => {
           width="52"
           height="52"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
