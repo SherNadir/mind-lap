@@ -43,6 +43,17 @@ export const Navbar = ({ lng }) => {
               <div>
                 <Logo />
               </div>
+              <div className="bg-primary w-10 h-8 rounded-full flex lg:hidden items-center  justify-center text-white mr-14">
+                {languages
+                  .filter((l) => lng !== l)
+                  .map((l) => {
+                    return (
+                      <span key={l}>
+                        <Link href={`/${l}`}>{l}</Link>
+                      </span>
+                    );
+                  })}
+              </div>
               <div className="hidden lg:flex items-center gap-4">
                 <ul className="flex gap-8">
                   <li className="text-primary font-bold text-sm cursor-pointer">
@@ -156,7 +167,7 @@ export const Navbar = ({ lng }) => {
                           <div className="flex items-center">
                             <button type="button">{item.icon}</button>
                             <div className="ml-2.5">
-                              <p className=" text-dark text-sm	">{item.name}</p>
+                              <p className="  text-sm	">{item.name}</p>
                             </div>
                           </div>
                         </Link>
