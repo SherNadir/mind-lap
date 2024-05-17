@@ -44,5 +44,10 @@
   "ENTER_YOUR_AGE": "Enter your Age",
   "AGE": "Age",
   "EXPERIENCE_WITH_JOB_SEARCH": "Experience with Job Search",
-  "BREIFLY_DESCRIBE_YOUR_EXPERIENCE": "Briefly describe your experience"
+  "BREIFLY_DESCRIBE_YOUR_EXPERIENCE": "Briefly describe your experience",
+  "NEW_INTERVIEW": "New Interview",
+  "YOU_HAVE_AN_INTERVIEW_NEXT_WEEK": "You have an interview next week",
+  "NEVER_WANT_TO_MISS_ANY_JOB_COURSES_NEWS": "Never Want to Miss Any Job/Courses News?",
+  "ENTER_YOUR_EMAIL_ADDRESS_HERE": "Enter your email address",
+  "SUBSCRIBE": "Subcribe"
 }

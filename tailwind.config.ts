@@ -75,6 +75,7 @@ const config: Config = {
         },
         primary: {
           DEFAULT: "#75D481",
+          100: "#37B547",
         },
         dark: {
           light: "#070707",
@@ -83,6 +84,9 @@ const config: Config = {
           200: "#4F4F4F",
           300: "#090914",
           400: "#18181B",
+          500: "#333333",
+          600: "#4F4F4F",
+          700: "#000000",
         },
         warning: {
           DEFAULT: "#FF6B2C",
@@ -92,9 +96,15 @@ const config: Config = {
         },
         grey: {
           light: "#BEBEBE",
+          200: "#E0E0E0",
+          300: "#A1AEBE",
+          400: "#828282",
+          500: "#9699A3",
+          600: "#E3EBFF",
         },
         white: {
           DEFAULT: "#FFFFFF",
+          100: "#FFFDFD",
         },
         link_border: "#CCCCCC",
       },

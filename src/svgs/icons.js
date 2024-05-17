@@ -20,3 +20,8 @@ export { AIIcon } from "./AIIcon";
 export { AssesmentIcon } from "./AssesmentIcon";
 export { ExploreIcon } from "./ExploreIcon";
 export { GamifiedIcon } from "./GamifiedIcon";
+export { BellIcon } from "./BellIcon";
+export { LogoBorder } from "./LogoBorder";
+export { FacebookIcon } from "./FacebookIcon";
+export { LinkedinIcon } from "./LinkedinIcon";
+export { TwitterIcon } from "./TwitterIcon";
