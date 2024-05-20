@@ -11,7 +11,7 @@ export const config = {
   ],
 };
 
-export function middleware(req) {
+export const middleware = (req) => {
   let lng;
   if (req.cookies.has(cookieName))
     lng = acceptLanguage.get(req.cookies.get(cookieName).value);
@@ -39,4 +39,4 @@ export function middleware(req) {
   }
 
   return NextResponse.next();
-}
+};
