@@ -6,12 +6,10 @@ acceptLanguage.languages(languages);
 
 export const config = {
   // matcher: '/:lng*'
-  matcher: [
-    "/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js|site.webmanifest).*)",
-  ],
+  matcher: ["/((?!api|_next/static|_next/image|images|favicon.ico).*)"],
 };
 
-export function middleware(req) {
+export const middleware = (req) => {
   let lng;
   if (req.cookies.has(cookieName))
     lng = acceptLanguage.get(req.cookies.get(cookieName).value);
@@ -39,4 +37,4 @@ export function middleware(req) {
   }
 
   return NextResponse.next();
-}
+};

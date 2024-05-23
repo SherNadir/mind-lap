@@ -21,10 +21,12 @@ import { ArrowDownIcon } from "@/svgs/icons";
 import { navigation } from "./data";
 import { Trans } from "react-i18next";
 import { languages } from "@/app/i18n/settings";
+import { usePathname } from "next/navigation";
 
 export const Navbar = ({ lng }) => {
   const [activeLink, setActiveLink] = useState("/");
   const menuItems = ["Update Profile Image", "Account Settings", "Log Out"];
+  const pathname = usePathname();
   return (
     <Disclosure as="div" className="bg-white">
       {({ open, close }) => (
@@ -44,15 +46,13 @@ export const Navbar = ({ lng }) => {
                 <Logo />
               </div>
               <div className="bg-primary w-10 h-8 rounded-full flex lg:hidden items-center  justify-center text-white mr-14">
-                {languages
-                  .filter((l) => lng !== l)
-                  .map((l) => {
-                    return (
-                      <span key={l}>
-                        <Link href={`/${l}`}>{l}</Link>
-                      </span>
-                    );
-                  })}
+                <Link
+                  href={`/${
+                    pathname === "/en" || pathname === "/" ? "de" : "en"
+                  }`}
+                >
+                  {pathname === "/en" || pathname === "/" ? "de" : "en"}
+                </Link>
               </div>
               <div className="hidden lg:flex items-center gap-4">
                 <ul className="flex gap-8">
@@ -76,15 +76,13 @@ export const Navbar = ({ lng }) => {
                   </li>
                 </ul>
                 <div className="bg-primary w-[60px] h-8 rounded-full flex items-center  justify-center text-white">
-                  {languages
-                    .filter((l) => lng !== l)
-                    .map((l) => {
-                      return (
-                        <span key={l}>
-                          <Link href={`/${l}`}>{l}</Link>
-                        </span>
-                      );
-                    })}
+                  <Link
+                    href={`/${
+                      pathname === "/en" || pathname === "/" ? "de" : "en"
+                    }`}
+                  >
+                    {pathname === "/en" || pathname === "/" ? "de" : "en"}
+                  </Link>
                 </div>
               </div>
               <div className=" gap-5 hidden lg:flex items-center">
