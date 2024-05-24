@@ -9,7 +9,7 @@ export const config = {
   matcher: ["/((?!api|_next/static|_next/image|images|favicon.ico).*)"],
 };
 
-export const middleware = (req) => {
+export function middleware(req) {
   let lng;
   if (req.cookies.has(cookieName))
     lng = acceptLanguage.get(req.cookies.get(cookieName).value);
@@ -17,7 +17,6 @@ export const middleware = (req) => {
   if (!lng) lng = fallbackLng;
 
   // Redirect if lng in path is not supported
-
   if (
     !languages.some((loc) => req.nextUrl.pathname.startsWith(`/${loc}`)) &&
     !req.nextUrl.pathname.startsWith("/_next")
@@ -38,4 +37,4 @@ export const middleware = (req) => {
   }
 
   return NextResponse.next();
-};
+}

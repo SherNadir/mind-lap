@@ -6,6 +6,7 @@ import Image from "next/image";
 
 export const Hero = ({ lng }) => {
   const { t } = useTranslation(lng);
+  console.log('t("DISCOVER_YOUR_DREAM")', t("DISCOVER_YOUR_DREAM"));
   return (
     <div className="content w-4/5  m-auto mb-10 sm:mb-[100px]">
       <div className="w-full flex flex-col text-center lg:text-start lg:w-3/5 ">
