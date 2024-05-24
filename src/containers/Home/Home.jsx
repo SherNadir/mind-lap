@@ -10,7 +10,6 @@ import MeetTeam from "@/components/MeetTeam";
 import CourseNews from "@/components/CourseNews";
 
 export const Home = ({ lng }) => {
-  console.log("lng Home", lng);
   return (
     <div className=" w-full m-auto">
       <Hero lng={lng} />
@@ -22,6 +21,7 @@ export const Home = ({ lng }) => {
       <Survey lng={lng} />
 
       <CourseNews />
+
       <Job lng={lng} />
 
       <SurveyForm lng={lng} />
