@@ -4,8 +4,8 @@ export const LogoBorder = ({ ...props }) => {
       <path
         d="M105.5 10C162.662 10 209 8.20918 209 6C209 3.79082 162.662 2 105.5 2C48.3376 2 2 3.79082 2 6C2 8.20918 48.3376 10 105.5 10Z"
         stroke="white"
-        stroke-width="2.44"
-        stroke-linejoin="round"
+        strokeWidth="2.44"
+        strokeLinejoin="round"
       />
     </svg>
   );

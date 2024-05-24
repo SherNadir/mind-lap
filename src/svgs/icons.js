@@ -25,3 +25,6 @@ export { LogoBorder } from "./LogoBorder";
 export { FacebookIcon } from "./FacebookIcon";
 export { LinkedinIcon } from "./LinkedinIcon";
 export { TwitterIcon } from "./TwitterIcon";
+export { Linkedin } from "./Linkedin";
+export { MailIcon } from "./MailIcon";
+export { Tiktok } from "./Tiktok";

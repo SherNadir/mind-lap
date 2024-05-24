@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Logo } from "@/svgs/icons";
 import { poppins } from "@/app/[lng]/fonts";
 import {
@@ -21,14 +21,22 @@ import { ArrowDownIcon } from "@/svgs/icons";
 import { navigation } from "./data";
 import { Trans } from "react-i18next";
 import { languages } from "@/app/i18n/settings";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 export const Navbar = ({ lng }) => {
   const [activeLink, setActiveLink] = useState("/");
   const menuItems = ["Update Profile Image", "Account Settings", "Log Out"];
   const pathname = usePathname();
+  const router = useRouter();
+
+  useEffect(() => {
+    const parts = pathname?.split("/");
+    const lastPart = parts[parts.length - 1];
+    setActiveLink(`/${lastPart}`);
+  }, [router, pathname]);
+
   return (
-    <Disclosure as="div" className="bg-white">
+    <Disclosure as="div" className="bg-white relative z-10">
       {({ open, close }) => (
         <div>
           <div className="border-b px-5 ">
@@ -46,32 +54,77 @@ export const Navbar = ({ lng }) => {
                 <Logo />
               </div>
               <div className="bg-primary w-10 h-8 rounded-full flex lg:hidden items-center  justify-center text-white mr-14">
-                <Link
-                  href={`/${
-                    pathname === "/en" || pathname === "/" ? "de" : "en"
-                  }`}
-                >
-                  {pathname === "/en" || pathname === "/" ? "de" : "en"}
+                <Link href={`${pathname === "/en" ? "/de" : "en"}`}>
+                  {pathname === "/en" ? "de" : "en"}
                 </Link>
               </div>
               <div className="hidden lg:flex items-center gap-4">
                 <ul className="flex gap-8">
-                  <li className="text-primary font-bold text-sm cursor-pointer">
+                  <li
+                    className={cls(
+                      "font-bold text-sm cursor-pointer text-dark",
+                      {
+                        "text-primary":
+                          pathname === "/en" || pathname === "/de",
+                      }
+                    )}
+                    onClick={() => router.push("/")}
+                  >
                     Home
                   </li>
-                  <li className="text-dark text-sm font-medium cursor-pointer">
-                    About Us
+                  <li
+                    className={cls(
+                      "font-bold text-sm cursor-pointer text-dark",
+                      {
+                        "text-primary": activeLink === "/dashboard",
+                      }
+                    )}
+                    onClick={() => router.push("/dashboard")}
+                  >
+                    Dashboard
                   </li>
-                  <li className="text-dark text-sm font-medium cursor-pointer">
+                  <li
+                    className={cls(
+                      "font-bold text-sm cursor-pointer text-dark",
+                      {
+                        "text-primary": activeLink === "/partners",
+                      }
+                    )}
+                    onClick={() => router.push("/partners")}
+                  >
                     Partners
                   </li>
-                  <li className="text-dark text-sm font-medium cursor-pointer">
+                  <li
+                    className={cls(
+                      "font-bold text-sm cursor-pointer text-dark",
+                      {
+                        "text-primary": activeLink === "/services",
+                      }
+                    )}
+                    onClick={() => router.push("/services")}
+                  >
                     Services
                   </li>
-                  <li className="text-dark text-sm font-medium cursor-pointer">
+                  <li
+                    className={cls(
+                      "font-bold text-sm cursor-pointer text-dark",
+                      {
+                        "text-primary": activeLink === "/roadmap",
+                      }
+                    )}
+                    onClick={() => router.push("/roadmap")}
+                  >
                     Roadmap
                   </li>
-                  <li className="text-dark text-sm font-medium cursor-pointer">
+                  <li
+                    className={cls(
+                      "font-bold text-sm cursor-pointer text-dark",
+                      {
+                        "text-primary": activeLink === "/team",
+                      }
+                    )}
+                    onClick={() => router.push("/team")}
+                  >
                     Team
                   </li>
                 </ul>
@@ -159,7 +212,7 @@ export const Navbar = ({ lng }) => {
                                 : "text-dark"
                             }`
                           )}
-                          href={`${item.href}`}
+                          href={`/${item.href}`}
                           onClick={close}
                         >
                           <div className="flex items-center">

@@ -1,7 +1,5 @@
-import Link from "next/link";
-
-import Dashboard from "@/containers/Dashboard";
+import Home from "@/containers/Home";
 
 export default async function Page({ params: { lng } }) {
-  return <Dashboard lng={lng} />;
+  return <Home lng={lng} />;
 }

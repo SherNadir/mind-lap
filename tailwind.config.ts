@@ -72,10 +72,12 @@ const config: Config = {
         success: {
           light: "#9CD2B2",
           DEFAULT: "#1ECA63",
+          100: "#77DD83"
         },
         primary: {
           DEFAULT: "#75D481",
-          100: "#37B547",
+          100: "#FBFFFB",
+          200: "#37B547"
         },
         dark: {
           light: "#070707",

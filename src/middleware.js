@@ -17,6 +17,7 @@ export const middleware = (req) => {
   if (!lng) lng = fallbackLng;
 
   // Redirect if lng in path is not supported
+
   if (
     !languages.some((loc) => req.nextUrl.pathname.startsWith(`/${loc}`)) &&
     !req.nextUrl.pathname.startsWith("/_next")

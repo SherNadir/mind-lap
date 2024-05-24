@@ -3,29 +3,24 @@
 import React from "react";
 import { useTranslation } from "@/app/i18n/client";
 import Image from "next/image";
-import courseBanner from "../../../../../public/images/courseBanner.png";
-import backgroundShapes from "../../../../../public/images/backgroundShapes.png";
+import courseBanner from "../../../public/images/courseBanner.png";
+import backgroundShapes from "../../../public/images/backgroundShapes.png";
 import { BellIcon } from "@/svgs/BellIcon";
 import Input from "../Input";
 
 export const CourseNews = ({ lng }) => {
-  const { t } = useTranslation(lng);
+  const { t } = useTranslation();
   return (
     <div className="relative bg-[#f7fff7] flex  w-full">
-      <div className="flex items-end justify-center flex-col relative h-[640px] w-full boxShadow-sm ">
+      <div className="flex items-end justify-center flex-col relative h-[640px] w-10/12 m-auto boxShadow-sm ">
         <div className="absolute left-[10%] w-[500px] h-[100%] ">
-          <Image
-            src={courseBanner}
-            alt="Course News"
-            fill={"layout"}
-            objectFit="cover"
-          />
+          <Image src={courseBanner} alt="Course News" fill />
         </div>
         <div
           className="flex items-center absolute top-[35%] left-[1rem] bg-white/60 rounded-[16px] shadow boxShadow-md z-10"
           style={{ backdropFilter: "blur(5px)" }}
         >
-          <div className=" pr-8 h-full py-4 pl-9 h-full">
+          <div className=" pr-8 py-4 pl-9 h-full">
             <BellIcon />
           </div>
           <div className="py-4 pr-6 w-full max-w-[196px]">
@@ -50,12 +45,7 @@ export const CourseNews = ({ lng }) => {
             </div>
             <div>
               <div className="absolute right-[-30%] top-[-350%] w-[884px] h-[844px] rotate-[20deg] z-0">
-                <Image
-                  src={backgroundShapes}
-                  alt="background-shapes"
-                  layout="fill"
-                  objectFit="cover"
-                />
+                <Image src={backgroundShapes} alt="background-shapes" fill />
               </div>
             </div>
           </div>

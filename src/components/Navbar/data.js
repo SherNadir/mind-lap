@@ -16,8 +16,8 @@ export const navigation = [
     current: true,
   },
   {
-    name: "Careers",
-    href: "/careers",
+    name: "Dashboard",
+    href: "/dashboard",
     icon: <CareersIcon className="w-5 h-5" aria-hidden="true" />,
     current: false,
   },
