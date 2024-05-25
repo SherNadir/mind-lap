@@ -6,7 +6,7 @@ import React from "react";
 import { useTranslation } from "@/app/i18n/client";
 
 export const Job = ({ lng }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(lng);
   return (
     <div className="relative flex flex-col  min-h-[320px] justify-center pb-12">
       <div className="w-4/5 m-auto flex flex-col lg:flex lg:flex-row gap-4 lg:gap-16">

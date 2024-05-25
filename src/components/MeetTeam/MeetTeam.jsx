@@ -1,27 +1,57 @@
 "use client";
 
-import { SvrilIcon } from "@/svgs/icons";
+import {
+  LinkedinIcon,
+  MailIcon,
+  SvrilIcon,
+  Tiktok,
+  TwitterIcon,
+} from "@/svgs/icons";
 import React from "react";
 import { useTranslation } from "@/app/i18n/client";
-import { teamMembers } from "./data";
 import TeamCard from "@/components/TeamCard";
+
+import ceoImage from "../../../public/images/ceoImage.png";
 
 export const MeetTeam = ({ lng }) => {
   const { t } = useTranslation(lng);
+
+  const teamMembers = [
+    {
+      image: ceoImage,
+      name: "Samir Weber",
+      role: `${t("CEO_AND_OWNER")} Mindelap`,
+      description: t("OWNER_DESCRIPTION"),
+      socials: [
+        { icon: <TwitterIcon />, link: "#" },
+        {
+          icon: <LinkedinIcon height="22" width="22" />,
+          link: "#",
+        },
+        {
+          icon: <MailIcon height="22" width="22" />,
+          link: "#",
+        },
+        {
+          icon: <Tiktok height="22" width="22" className={"text-white"} />,
+          link: "#s",
+        },
+      ],
+    },
+  ];
   return (
     <div className="relative flex flex-col text-center bg-primary-100  pb-12 mt-12 ">
-      <div className="container mx-auto">
+      <div className="w-4/5 mx-auto">
         <div className="pt-16 flex flex-col justify-center items-center">
-          <p className="text-primary text-base">WHO WE ARE</p>
+          <p className="text-primary text-base">{t("WHO_WE_ARE")}</p>
           <h1 className="mt-1.5 text-dark-500  text-6xl font-semibold">
-            Meet Our CEO
+            {t("MEET_OUR_CEO")}
           </h1>
           <p
             className="mt-4 text-grey-500 text-xl max-w-[692px]
          "
           >
-            Just take a look - each member of the team is watching your every
-            gesture and will hear your every whisper.
+            {t("TAKE_A_LOOK")}
           </p>
         </div>
         <div className="flex flex-col gap-16 md:gap-8 mt-8 ">

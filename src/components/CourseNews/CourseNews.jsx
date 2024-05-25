@@ -9,10 +9,10 @@ import { BellIcon } from "@/svgs/BellIcon";
 import Input from "../Input";
 
 export const CourseNews = ({ lng }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(lng);
   return (
     <div className="relative bg-[#f7fff7] flex  w-full">
-      <div className="flex items-end justify-center flex-col relative h-full md:h-[640px] w-11/12 md:w-10/12 m-auto boxShadow-sm ">
+      <div className="flex items-end justify-center flex-col relative h-full md:h-[640px] w-11/12 md:w-4/5 m-auto boxShadow-sm ">
         <div className="hidden md:block absolute left-[10%] w-[500px] h-[100%] ">
           <Image src={courseBanner} alt="Course News" fill />
         </div>
@@ -43,7 +43,7 @@ export const CourseNews = ({ lng }) => {
                 buttonText={t("SUBSCRIBE")}
                 padding="p-2"
                 fontSize="text-sm"
-                buttonSize="h-8 items-center justify-center px-3 py-0"
+                buttonSize="items-center justify-center px-3 py-0"
               />
             </div>
             <div>
