@@ -9,6 +9,8 @@ import SurveyForm from "@/components/SurveyForm";
 import MeetTeam from "@/components/MeetTeam";
 import CourseNews from "@/components/CourseNews";
 import RoadMap from "@/components/RoadMap";
+import School from "@/components/School";
+import Company from "@/components/Company";
 
 export const Home = ({ lng }) => {
   return (
@@ -28,7 +30,12 @@ export const Home = ({ lng }) => {
       <Job lng={lng} />
 
       <SurveyForm lng={lng} />
+
       <MeetTeam lng={lng} />
+
+      <School lng={lng} />
+
+      {/* <Company lng={lng} /> */}
     </div>
   );
 };

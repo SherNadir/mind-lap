@@ -35,3 +35,4 @@ export { LayerIcon } from "./LayerIcon";
 export { HeartIcon } from "./HeartIcon";
 export { PathIcon } from "./PathIcon";
 export { LighteningIcon } from "./LighteningIcon";
+export { BookIcon } from "./BookIcon";
