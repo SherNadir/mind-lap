@@ -19,10 +19,10 @@ export const RoadMap = ({ lng }) => {
     <div className="relative">
       <div className=" flex flex-col items-center text-start  min-h-[320px] justify-center pb-12 mt-12 w-4/5 m-auto">
         <div className="flex flex-col items-start mt-12 w-full">
-          <p className="mt-5 text-base text-primary font-semibold">
+          <p className="mt-20 sm:mt-5 text-base text-primary font-semibold">
             {t("OUR_ROAD_MAP")}
           </p>
-          <p className="w-4/5 lg:w-full mt-5 text-6xl text-dark-300 font-semibold">
+          <p className="w-full sm:w-4/5 lg:w-full mt-5 text-5xl sm:text-6xl text-dark-300 font-semibold">
             {t("OUR_CAREER")}
             <span className="text-primary"> {t("GUIDANCE_PLATFORM")}</span>
             <br />

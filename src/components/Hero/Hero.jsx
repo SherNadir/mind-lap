@@ -13,7 +13,7 @@ export const Hero = ({ lng }) => {
         <p className="mt-5 lg:mt-[44px] text-6xl sm:text-7xl text-primary">
           MINDELAP
         </p>
-        <p className="mt-0 mb-4 text-6xl sm:text-7xl text-dark-100 leading-[60px]">
+        <p className="mt-0 mb-4 text-6xl text-dark-100 leading-[60px]">
           {t("DISCOVER_YOUR_DREAM")}
         </p>
         <p className={`text-4xl font-medium text-dark-200 `}>
