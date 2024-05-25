@@ -20,7 +20,7 @@ export const Hero = ({ lng }) => {
           {t("DESCRIPTION")}
         </p>
       </div>
-      <div className="hidden lg:flex lg:absolute right-0 top-0 w-2/5">
+      <div className="hidden lg:flex lg:absolute right-0 top-0 w-1/2">
         <Image
           src="/images/heroImage.png"
           alt="Hero Image"
