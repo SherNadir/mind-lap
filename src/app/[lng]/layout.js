@@ -9,7 +9,7 @@ export async function generateStaticParams() {
 }
 
 export const metadata = {
-  title: "Mindlap",
+  title: "CareerMatch",
   description: "AI driven Career Guidance",
 };
 

@@ -13,10 +13,10 @@ export const CourseNews = ({ lng }) => {
   return (
     <div className="relative bg-[#f7fff7] flex  w-full">
       <div className="flex items-end justify-center flex-col relative h-full md:h-[640px] w-11/12 md:w-4/5 m-auto boxShadow-sm ">
-        <div className="hidden md:block absolute left-[10%] w-[500px] h-[100%] ">
+        <div className="hidden md:block absolute left-[10%] w-[700px] h-[100%] ">
           <Image src={courseBanner} alt="Course News" fill />
         </div>
-        <div
+        {/* <div
           className="hidden md:flex items-center absolute top-[30%] left-[1rem] bg-white/60 rounded-[16px] shadow boxShadow-md z-10"
           style={{ backdropFilter: "blur(5px)" }}
         >
@@ -31,7 +31,7 @@ export const CourseNews = ({ lng }) => {
               {t("YOU_HAVE_AN_INTERVIEW_NEXT_WEEK")}
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="overflow-hidden relative top-[24px] flex items-center bg-primary rounded-[2rem] z-0 w-full py-8 px-4 max-w-[1230px]">
           <div className="flex flex-col md:flex-row justify-between items-center gap-[20px] text-white w-full">
             <h2 className="flex-1 text-3xl font-bold max-w-[436px] text-center">

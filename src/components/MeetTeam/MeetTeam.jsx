@@ -20,7 +20,7 @@ export const MeetTeam = ({ lng }) => {
     {
       image: ceoImage,
       name: "Samir Weber",
-      role: `${t("CEO_AND_OWNER")} Mindelap`,
+      role: `${t("CEO_AND_OWNER")} Career-Match`,
       description: t("OWNER_DESCRIPTION"),
       socials: [
         { icon: <TwitterIcon />, link: "#" },

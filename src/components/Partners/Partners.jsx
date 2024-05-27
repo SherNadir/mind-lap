@@ -21,9 +21,9 @@ export const Partners = ({ lng }) => {
         <p className="mt-5 text-6xl text-dark-300 font-semibold">
           {t("OUR_PARTNERS")}
         </p>
-        {/* <p className="mt-5 text-base font-semibold text-dark-light">
+        <p className="mt-5 text-base font-semibold text-dark">
           {t("JOIN_4000_COMPANIES")}
-        </p> */}
+        </p>
       </div>
       <div className="flex flex-wrap justify-center gap-20 mt-20">
         <div className="flex items-center gap-4">

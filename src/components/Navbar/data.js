@@ -34,7 +34,7 @@ export const navigation = [
     current: false,
   },
   {
-    name: "Mindlap Team",
+    name: "CareerMatch Team",
     href: "/team",
     icon: <TeamsIcon className="w-6 h-6" aria-hidden="true" />,
     current: false,

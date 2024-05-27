@@ -18,14 +18,14 @@ export const SurveyForm = ({ lng }) => {
       </div>
       <div className="w-11/12 sm:w-1/2 m-auto justify-center">
         <div className="flex flex-col  items-start w-full justify-center mt-6">
-          <label className="text-sm font-medium text-dark">{t("NAME")}</label>
+          <label className="text-base font-medium text-dark">{t("NAME")}</label>
           <textarea
             type="textarea"
             placeholder={t("ENTER_YOUR_NAME")}
-            className="border bg-grey w-full rounded-[6px] py-2 px-3 mt-1 h-20"
+            className="border bg-grey w-full rounded-[6px] py-2 px-3 mt-4 h-40"
           ></textarea>
         </div>
-        <div className="flex flex-col  items-start w-full justify-center mt-6">
+        {/* <div className="flex flex-col  items-start w-full justify-center mt-6">
           <label className="text-sm font-medium text-dark">{t("AGE")}</label>
           <input
             type="text"
@@ -42,7 +42,7 @@ export const SurveyForm = ({ lng }) => {
             placeholder={t("BREIFLY_DESCRIBE_YOUR_EXPERIENCE")}
             className="border bg-grey w-full rounded-[6px] py-2 px-3 mt-1"
           ></input>
-        </div>
+        </div> */}
         <button
           className={`mt-6 text-base font-medium text-white bg-primary py-3 px-8 rounded-full`}
         >

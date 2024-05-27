@@ -35,7 +35,7 @@ export const Home = ({ lng }) => {
 
       {/* <Job lng={lng} /> */}
 
-      {/* <Company lng={lng} /> */}
+      <Company lng={lng} />
     </div>
   );
 };

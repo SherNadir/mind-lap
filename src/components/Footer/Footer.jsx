@@ -20,8 +20,8 @@ export const Footer = () => {
             </div>
             <div>
               <p className="text-grey-600">
-                MINDELAP is the largest talent platform in Swaziland and Zurich
-                for career development and recruitment.
+                CAREER-MATCH is the largest talent platform in Swaziland and
+                Zurich for career development and recruitment.
               </p>
             </div>
             <div className="flex">
