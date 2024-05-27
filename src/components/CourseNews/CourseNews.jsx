@@ -41,7 +41,7 @@ export const CourseNews = ({ lng }) => {
               <Input
                 placeholder={t("ENTER_YOUR_EMAIL_ADDRESS_HERE")}
                 buttonText={t("SUBSCRIBE")}
-                padding="p-2"
+                padding="px-4 py-2"
                 fontSize="text-sm"
                 buttonSize="items-center justify-center px-3 py-0"
               />

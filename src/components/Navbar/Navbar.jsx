@@ -50,7 +50,7 @@ export const Navbar = ({ lng }) => {
                   )}
                 </DisclosureButton>
               </div>
-              <div>
+              <div className="text-primary">
                 <Logo />
               </div>
               <div className="bg-primary w-10 h-8 rounded-full flex lg:hidden items-center  justify-center text-white mr-14">

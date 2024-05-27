@@ -9,9 +9,8 @@ export const Hero = ({ lng }) => {
   return (
     <div className="content w-4/5  m-auto mb-10 sm:mb-[100px]">
       <div className="w-full flex flex-col text-center lg:text-start lg:w-3/5 ">
-        <p className={`text-4xl text-dark mt-10 `}>{t("FUTURE")}</p>
-        <p className="mt-5 lg:mt-[44px] text-6xl sm:text-7xl text-primary">
-          MINDELAP
+        <p className="mt-5 lg:mt-[180px] text-6xl sm:text-7xl text-primary">
+          CareerMatch-Kids
         </p>
         <p className="mt-0 mb-4 text-6xl text-dark-100 leading-[60px]">
           {t("DISCOVER_YOUR_DREAM")}
@@ -38,7 +37,7 @@ export const Hero = ({ lng }) => {
           <input
             type="text"
             className="text-base font-semibold text-dark focus:outline-none sm:w-auto w-full"
-            placeholder="student@gmail.com"
+            placeholder="maxmuster@gmail.com"
           ></input>
         </div>
         <button

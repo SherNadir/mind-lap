@@ -5,6 +5,7 @@ import { TwitterIcon } from "@/svgs/TwitterIcon";
 import Link from "next/link";
 import React from "react";
 import Input from "../Input";
+import { Logo } from "@/svgs/Logo";
 
 export const Footer = () => {
   return (
@@ -12,10 +13,9 @@ export const Footer = () => {
       <div className="container mx-auto px-4 ">
         <div className="grid grid-cols-1 gap-28 md:grid-cols-2 lg:grid-cols-3">
           <div className="flex flex-col gap-10">
-            <div className="text-center w-52">
-              <h1 className="text-[42px] font-medium text-white">MINDELAP</h1>
-              <div className="mt-2">
-                <LogoBorder />
+            <div className="text-center">
+              <div className="text-white">
+                <Logo />
               </div>
             </div>
             <div>

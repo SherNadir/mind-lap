@@ -21,19 +21,19 @@ export const Home = ({ lng }) => {
 
       <Services lng={lng} />
 
-      <Survey lng={lng} />
-
-      <RoadMap lng={lng} />
-
       <CourseNews />
 
-      <Job lng={lng} />
+      {/* <Survey lng={lng} /> */}
 
-      <SurveyForm lng={lng} />
+      <RoadMap lng={lng} />
 
       <MeetTeam lng={lng} />
 
       <School lng={lng} />
+
+      <SurveyForm lng={lng} />
+
+      {/* <Job lng={lng} /> */}
 
       {/* <Company lng={lng} /> */}
     </div>
