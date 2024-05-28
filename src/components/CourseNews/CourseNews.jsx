@@ -5,7 +5,6 @@ import { useTranslation } from "@/app/i18n/client";
 import Image from "next/image";
 import courseBanner from "../../../public/images/courseBanner.png";
 import backgroundShapes from "../../../public/images/backgroundShapes.png";
-import { BellIcon } from "@/svgs/BellIcon";
 import Input from "../Input";
 
 export const CourseNews = ({ lng }) => {
@@ -32,7 +31,7 @@ export const CourseNews = ({ lng }) => {
             </p>
           </div>
         </div> */}
-        <div className="overflow-hidden relative top-[24px] flex items-center bg-primary rounded-[2rem] z-0 w-full py-8 px-4 max-w-[1230px]">
+        <div className="overflow-hidden relative top-[24px] flex items-center bg-primary rounded-[2rem] z-0 w-full py-8 px-4 ">
           <div className="flex flex-col md:flex-row justify-between items-center gap-[20px] text-white w-full">
             <h2 className="flex-1 text-3xl font-bold max-w-[436px] text-center">
               {t("NEVER_WANT_TO_MISS_ANY_JOB_COURSES_NEWS")}
@@ -43,7 +42,7 @@ export const CourseNews = ({ lng }) => {
                 buttonText={t("SUBSCRIBE")}
                 padding="px-4 py-2"
                 fontSize="text-sm"
-                buttonSize="items-center justify-center px-3 py-0"
+                buttonSize="items-center justify-center px-3 py-1.5"
               />
             </div>
             <div>

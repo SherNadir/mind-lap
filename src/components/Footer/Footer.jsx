@@ -89,8 +89,8 @@ export const Footer = () => {
                 buttonText={"Submit"}
                 noBorder
                 fontSize={"text-base"}
-                buttonSize={"text-base"}
-                padding={"pl-8 pr-1 py-2"}
+                buttonSize={"text-base px-4 py-2"}
+                padding={"px-5  py-2"}
               />
             </div>
           </div>

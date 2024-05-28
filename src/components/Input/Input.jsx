@@ -17,7 +17,7 @@ export const Input = ({
         />
         {noBorder ? <></> : <div className="bg-grey-200 h-10 w-1"></div>}
         <button
-          className={`transition duration-200 ease-out hover:bg-primary-100 bg-primary text-white py-3 px-6 rounded-full font-bold	${buttonSize}`}
+          className={`transition duration-200 ease-out hover:bg-primary-200 bg-primary text-white rounded-full font-bold	${buttonSize}`}
         >
           {buttonText}
         </button>

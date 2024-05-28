@@ -44,7 +44,7 @@ export const SurveyForm = ({ lng }) => {
           ></input>
         </div> */}
         <button
-          className={`mt-6 text-base font-medium text-white bg-primary py-3 px-8 rounded-full`}
+          className={`mt-6 text-base font-medium text-white bg-primary py-3 px-8 rounded-full hover:bg-primary-200`}
         >
           {t("SUBMIT")}
         </button>

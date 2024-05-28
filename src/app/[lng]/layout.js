@@ -2,7 +2,14 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { languages } from "../i18n/settings";
 import Footer from "@/components/Footer";
-import { inter } from "./fonts";
+import { Urbanist } from "next/font/google";
+
+export const urbanist = Urbanist({
+  weight: ["300", "400", "500", "600", "700", "800"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
@@ -16,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children, params: { lng } }) {
   return (
     <html lang={lng}>
-      <body className={inter.className}>
+      <body className={urbanist.className}>
         <main className="">
           <Navbar />
           {children}

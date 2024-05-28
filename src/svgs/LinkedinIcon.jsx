@@ -2,7 +2,7 @@ import React from "react";
 
 export const LinkedinIcon = ({ ...props }) => {
   return (
-    <svg width="32" height="32" viewBox="0 0 24 24" {...props}>
+    <svg width="24" height="24" viewBox="0 0 24 24" {...props}>
       <circle cx="4.983" cy="5.009" r="2.188" fill="currentColor" />
       <path
         fill="currentColor"

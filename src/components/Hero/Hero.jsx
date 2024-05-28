@@ -10,7 +10,7 @@ export const Hero = ({ lng }) => {
     <div className="content w-4/5  m-auto mb-10 sm:mb-[100px]">
       <div className="w-full flex flex-col text-center lg:text-start lg:w-3/5 ">
         <p className="mt-5 lg:mt-[180px] text-6xl sm:text-7xl text-primary">
-          CareerMatch-Kids
+          Career<span className="text-grey-700">Match</span>-Kids
         </p>
         <p className="mt-0 mb-4 text-6xl text-dark-100 leading-[60px]">
           {t("DISCOVER_YOUR_DREAM")}
@@ -41,7 +41,7 @@ export const Hero = ({ lng }) => {
           ></input>
         </div>
         <button
-          className={` text-base font-medium text-white bg-primary py-3 px-3 sm:px-8 rounded-full`}
+          className={` text-base font-medium text-white bg-primary py-3 px-3 sm:px-8 rounded-full hover:bg-primary-200`}
         >
           {t("SUBMIT")}
         </button>

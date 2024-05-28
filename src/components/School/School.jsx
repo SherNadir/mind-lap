@@ -35,7 +35,7 @@ export const School = ({ lng }) => {
           </p>
           <div className="flex justify-center md:justify-start mb-10 md:mb-0">
             <button
-              className={`mt-12 text-base font-medium text-white bg-primary py-3 px-8 rounded-full`}
+              className={`mt-12 text-base font-medium text-white bg-primary py-3 px-8 rounded-full hover:bg-primary-200`}
             >
               {t("GET_STARTED")}
             </button>

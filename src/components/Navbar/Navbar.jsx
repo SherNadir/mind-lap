@@ -53,7 +53,7 @@ export const Navbar = ({ lng }) => {
               <div className="text-primary">
                 <Logo />
               </div>
-              <div className="bg-primary w-10 h-8 rounded-full flex lg:hidden items-center  justify-center text-white mr-14">
+              <div className="bg-primary w-10 h-8 rounded-full flex lg:hidden items-center  justify-center text-white mr-14 hover:bg-primary-200 cursor-pointer">
                 <Link href={`${pathname === "/en" ? "/de" : "en"}`}>
                   {pathname === "/en" ? "de" : "en"}
                 </Link>
@@ -62,7 +62,7 @@ export const Navbar = ({ lng }) => {
                 <ul className="flex gap-8">
                   <li
                     className={cls(
-                      "font-bold text-sm cursor-pointer text-dark",
+                      "font-bold text-sm cursor-pointer text-dark hover:text-primary",
                       {
                         "text-primary":
                           pathname === "/en" || pathname === "/de",
@@ -74,7 +74,7 @@ export const Navbar = ({ lng }) => {
                   </li>
                   <li
                     className={cls(
-                      "font-bold text-sm cursor-pointer text-dark",
+                      "font-bold text-sm cursor-pointer text-dark hover:text-primary",
                       {
                         "text-primary": activeLink === "/dashboard",
                       }
@@ -85,7 +85,7 @@ export const Navbar = ({ lng }) => {
                   </li>
                   <li
                     className={cls(
-                      "font-bold text-sm cursor-pointer text-dark",
+                      "font-bold text-sm cursor-pointer text-dark hover:text-primary",
                       {
                         "text-primary": activeLink === "/partners",
                       }
@@ -96,7 +96,7 @@ export const Navbar = ({ lng }) => {
                   </li>
                   <li
                     className={cls(
-                      "font-bold text-sm cursor-pointer text-dark",
+                      "font-bold text-sm cursor-pointer text-dark hover:text-primary",
                       {
                         "text-primary": activeLink === "/services",
                       }
@@ -107,7 +107,7 @@ export const Navbar = ({ lng }) => {
                   </li>
                   <li
                     className={cls(
-                      "font-bold text-sm cursor-pointer text-dark",
+                      "font-bold text-sm cursor-pointer text-dark hover:text-primary",
                       {
                         "text-primary": activeLink === "/roadmap",
                       }
@@ -118,7 +118,7 @@ export const Navbar = ({ lng }) => {
                   </li>
                   <li
                     className={cls(
-                      "font-bold text-sm cursor-pointer text-dark",
+                      "font-bold text-sm cursor-pointer text-dark hover:text-primary",
                       {
                         "text-primary": activeLink === "/team",
                       }
@@ -128,7 +128,7 @@ export const Navbar = ({ lng }) => {
                     Team
                   </li>
                 </ul>
-                <div className="bg-primary w-[60px] h-8 rounded-full flex items-center  justify-center text-white">
+                <div className="bg-primary w-[60px] h-8 rounded-full flex items-center  justify-center text-white hover:bg-primary-200 cursor-pointer">
                   <Link
                     href={`/${
                       pathname === "/en" || pathname === "/" ? "de" : "en"
@@ -139,13 +139,11 @@ export const Navbar = ({ lng }) => {
                 </div>
               </div>
               <div className=" gap-5 hidden lg:flex items-center">
-                <button
-                  className={`${poppins.className} text-sm font-medium text-dark`}
-                >
+                <button className={` text-sm font-medium text-dark`}>
                   Login
                 </button>
                 <button
-                  className={`${poppins.className} text-base font-medium text-white bg-primary py-3 px-8 rounded-[1.25rem]`}
+                  className={` text-base font-medium text-white bg-primary py-3 px-8 rounded-[1.25rem] hover:bg-primary-200`}
                 >
                   Sign Up
                 </button>
