@@ -21,7 +21,7 @@ export const Home = ({ lng }) => {
 
       <Services lng={lng} />
 
-      <CourseNews />
+      <CourseNews lng={lng} />
 
       {/* <Survey lng={lng} /> */}
 

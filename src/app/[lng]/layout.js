@@ -2,9 +2,9 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { languages } from "../i18n/settings";
 import Footer from "@/components/Footer";
-import { Urbanist } from "next/font/google";
+import { Inter } from "next/font/google";
 
-export const urbanist = Urbanist({
+export const inter = Inter({
   weight: ["300", "400", "500", "600", "700", "800"],
   style: ["normal"],
   subsets: ["latin"],
@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children, params: { lng } }) {
   return (
     <html lang={lng}>
-      <body className={urbanist.className}>
+      <body className={inter.className}>
         <main className="">
           <Navbar />
           {children}
