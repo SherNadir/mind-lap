@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { languages } from "../i18n/settings";
 import Footer from "@/components/Footer";
-import { inter } from "./fonts";
+import { urbanist } from "./fonts";
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children, params: { lng } }) {
   return (
     <html lang={lng}>
-      <body className={inter.className}>
+      <body className={urbanist.className}>
         <main className="">
           <Navbar />
           {children}
