@@ -28,7 +28,7 @@
     "**/*.js",
     ".next/types/**/*.ts",
     "src/app/[lng]/second-page/page.js",
-    "src/app/[lng]/page.js"
+    "src/app/[lng]/(home)/page.js"
   ],
   "exclude": ["node_modules"]
 }

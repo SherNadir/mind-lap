@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar";
-import "./globals.css";
-import { languages } from "../i18n/settings";
+import "../globals.css";
+import { languages } from "../../i18n/settings";
 import Footer from "@/components/Footer";
-import { urbanist } from "./fonts";
+import { urbanist } from "../fonts";
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));

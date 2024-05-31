@@ -7,8 +7,8 @@ export const Company = ({ lng }) => {
   const { t } = useTranslation(lng);
   return (
     <div className="content bg-white w-full pt-10">
-      <div className="w-4/5 flex-col md:flex md:flex-row items-center  m-auto mb-8">
-        <div className="w-full lg:w-4/5 h-full md:h-[24rem] bg-[#E2E8F0] rounded-l-2xl  rounded-r-2xl md:rounded-r-none md:rounded-l-2xl pt-8 md:py-0 px-4 lg:pl-20 lg:pr-4 flex flex-col gap-4 md:gap-8 justify-center items-center md:items-start">
+      <div className="w-11/12 lg:w-4/5 flex-col md:flex md:flex-row items-center  m-auto mb-8">
+        <div className="w-full lg:w-4/5 h-full md:h-[24rem] bg-[#E2E8F0] rounded-l-2xl  rounded-r-2xl lg:rounded-r-none lg:rounded-l-2xl pt-8 md:py-0 px-4 lg:pl-20 lg:pr-4 flex flex-col gap-4 md:gap-8 justify-center items-center md:items-start">
           <p className="text-2xl md:text-6xl text-dark text-center lg:text-start">
             {t("GET_IN_TOUCH")}
           </p>
