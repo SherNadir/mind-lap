@@ -24,7 +24,7 @@ export const Footer = () => {
                 Zurich for career development and recruitment.
               </p>
             </div>
-            <div className="flex">
+            <div className="flex items-center">
               <Link href={"#"} className="py-2 pr-6 border-r border-grey-500">
                 <FacebookIcon
                   className={

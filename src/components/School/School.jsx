@@ -14,7 +14,7 @@ export const School = ({ lng }) => {
         <SvrilIcon />
       </div>
       <div className="content w-full md:w-4/5 flex-col md:flex md:flex-row items-center gap-4 m-auto my-8">
-        <div className="w-10/12 m-auto md:w-1/2">
+        <div className="w-10/12 m-auto md:w-2/5">
           <Image
             src="/images/schoolImage.png"
             alt="Hero Image"
@@ -24,7 +24,7 @@ export const School = ({ lng }) => {
             style={{ width: "100%", height: "100%" }}
           />
         </div>
-        <div className="w-11/12 m-auto md:w-1/2">
+        <div className="w-11/12 m-auto md:w-3/5">
           <p className="mt-5 text-6xl text-dark text-center md:text-start">
             {t("GET_IN_TOUCH")}
           </p>
