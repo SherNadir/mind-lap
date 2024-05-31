@@ -25,7 +25,7 @@ export const Services = ({ lng }) => {
         </p>
       </div>
       <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-12 w-4/5 mt-10">
-        <div className=" border-primary rounded-[18px]  flex shadow-sm blur-14 flex-col items-center w-full px-10 py-8 hover:border hover:border-primary">
+        <div className=" border-primary rounded-[18px]  flex shadow-sm blur-14 flex-col items-center w-full px-10 py-8 hover:border hover:border-primary cursor-pointer">
           <MentorsIcon />
           <p className="mt-7 text-4xl font-medium text-dark">
             {t("EXPERIENCE_MENTORS")}
@@ -34,7 +34,7 @@ export const Services = ({ lng }) => {
             {t("EXPERIENCE_DESCRIPTION")}
           </p>
         </div>
-        <div className=" border-primary rounded-[18px] shadow-sm blur-14 flex flex-col items-center w-full px-10 py-8 hover:border hover:border-primary">
+        <div className=" border-primary rounded-[18px] shadow-sm blur-14 flex flex-col items-center w-full px-10 py-8 hover:border hover:border-primary cursor-pointer">
           <CalenderIcon />
           <p className="mt-7 text-4xl font-medium text-dark">
             {t("CREATIVE_PROGRAMS")}
@@ -43,7 +43,7 @@ export const Services = ({ lng }) => {
             {t("CREATIVE_DESCRIPTION")}
           </p>
         </div>
-        <div className=" border-primary rounded-[18px] shadow-sm blur-14 flex flex-col items-center w-full px-10 py-8 hover:border hover:border-primary">
+        <div className=" border-primary rounded-[18px] shadow-sm blur-14 flex flex-col items-center w-full px-10 py-8 hover:border hover:border-primary cursor-pointer">
           <AIIcon />
           <p className="mt-7 text-4xl font-medium text-dark">
             {t("CAREER_FINDER")}
@@ -52,7 +52,7 @@ export const Services = ({ lng }) => {
             {t("CAREER_DESCRIPTION")}
           </p>
         </div>
-        <div className=" border-primary rounded-[18px] shadow-sm blur-14 flex flex-col items-center w-full px-10 py-8 hover:border hover:border-primary">
+        <div className=" border-primary rounded-[18px] shadow-sm blur-14 flex flex-col items-center w-full px-10 py-8 hover:border hover:border-primary cursor-pointer">
           <AssesmentIcon />
           <p className="mt-7 text-4xl font-medium text-dark">
             {t("CAREER_ASSESMENT")}
@@ -61,7 +61,7 @@ export const Services = ({ lng }) => {
             {t("ASSESMENT_DESCRIPTION")}
           </p>
         </div>
-        <div className=" border-primary rounded-[18px] shadow-sm blur-14 flex flex-col items-center w-full px-10 py-8 hover:border hover:border-primary">
+        <div className=" border-primary rounded-[18px] shadow-sm blur-14 flex flex-col items-center w-full px-10 py-8 hover:border hover:border-primary cursor-pointer">
           <ExploreIcon />
           <p className="mt-7 text-4xl font-medium text-dark">
             {t("EXPLORE_CAREER")}
@@ -70,7 +70,7 @@ export const Services = ({ lng }) => {
             {t("EXPLORE_CAREER_DESCRIPTION")}
           </p>
         </div>
-        <div className=" border-primary rounded-[18px] shadow-sm blur-14 flex flex-col items-center w-full px-10 py-8 hover:border hover:border-primary">
+        <div className=" border-primary rounded-[18px] shadow-sm blur-14 flex flex-col items-center w-full px-10 py-8 hover:border hover:border-primary cursor-pointer">
           <GamifiedIcon />
           <p className="mt-7 text-4xl font-medium text-dark">
             {t("PERSONALIZED_GAMIFIED")}
