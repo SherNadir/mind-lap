@@ -30,7 +30,7 @@ export const DashboardNavbar = ({ lng }) => {
 
   useEffect(() => {
     setActiveLink(`/${lastPart}`);
-  }, [router, pathname]);
+  }, [router, pathname, lastPart]);
 
   const newLocale = pathname.includes("/en") ? "de" : "en";
 

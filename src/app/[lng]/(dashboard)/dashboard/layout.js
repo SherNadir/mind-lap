@@ -1,9 +1,8 @@
-import Navbar from "@/components/Navbar";
 import "../../globals.css";
 import { languages } from "../../../i18n/settings";
 import Footer from "@/components/Footer";
 import { urbanist } from "../../fonts";
-import DashboardNavbar from "@/components/Dashboardnavbar";
+import DashboardNavbar from "@/components/DashboardNavbar";
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
