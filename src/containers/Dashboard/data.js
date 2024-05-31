@@ -17,17 +17,24 @@ export const navigation = [
     current: true,
   },
   {
-    id: "dashboard",
-    name: "Dashboard",
-    href: "/dashboard",
-    icon: <SettingsIcon className="w-5 h-5" aria-hidden="true" />,
+    id: "mentor",
+    name: "Mentor",
+    href: "/mentor",
+    icon: <CareersIcon className="w-5 h-5" aria-hidden="true" />,
+    current: false,
+  },
+  {
+    id: "careers",
+    name: "Careers",
+    href: "/careers",
+    icon: <CareersIcon className="w-5 h-5" aria-hidden="true" />,
     current: false,
   },
   {
     id: "goals",
     name: "Goals",
     href: "/goals",
-    icon: <SettingsIcon className="w-6 h-6" aria-hidden="true" />,
+    icon: <GoalsIcon className="w-6 h-6" aria-hidden="true" />,
     current: false,
   },
   {
@@ -48,7 +55,7 @@ export const navigation = [
     id: "help",
     name: "Help",
     href: "/help",
-    icon: <SettingsIcon className="w-6 h-6" aria-hidden="true" />,
+    icon: <InfoIcon className="w-6 h-6" aria-hidden="true" />,
     current: false,
   },
 ];

@@ -37,30 +37,35 @@ export const Dashboard = ({ lng }) => {
   const newLocale = pathname.includes("/en") ? "de" : "en";
   return (
     <div className="my-[5.5rem] md:my-0 ">
-      <div className="relative bg-[#E9EFF2] w-full m-auto flex h-[80vh]">
-        <div className=" bg-white h-auto w-80 my-6  px-6 pt-10 hidden md:flex flex-col">
-          {navigation?.map((item, index) => {
-            return (
-              <Link
-                key={index}
-                className={cls(
-                  `flex items-center justify-between p-4 mb-2.5 w-full h-16  rounded-2xl cursor-pointer hover:bg-primary hover:text-white  ${
-                    activeLink === item.id
-                      ? "text-white bg-primary"
-                      : "text-dark"
-                  }`
-                )}
-                href={`/${item.href}`}
-              >
-                <div className="flex items-center">
-                  <button type="button">{item.icon}</button>
-                  <div className="ml-2.5">
-                    <p className="  text-sm	">{item.name}</p>
+      <div className="relative bg-[#E9EFF2] w-full m-auto flex h-[85vh]">
+        <div className=" bg-white h-auto w-80 my-6  px-6 pt-10 hidden md:flex flex-col justify-between">
+          <div>
+            {navigation?.map((item, index) => {
+              return (
+                <Link
+                  key={index}
+                  className={cls(
+                    `flex items-center justify-between p-4 mb-2.5 w-full h-16  rounded-2xl cursor-pointer hover:bg-primary hover:text-white  ${
+                      activeLink === item.id
+                        ? "text-white bg-primary"
+                        : "text-dark"
+                    }`
+                  )}
+                  href={`/${item.href}`}
+                >
+                  <div className="flex items-center">
+                    <button type="button">{item.icon}</button>
+                    <div className="ml-2.5">
+                      <p className="  text-sm	">{item.name}</p>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            );
-          })}
+                </Link>
+              );
+            })}
+          </div>
+          <div className="h-10 bg-grey-800 w-full rounded-xl flex items-center justify-center mb-5 hover:bg-grey-300 cursor-pointer">
+            <p className="text-white">logout</p>
+          </div>
         </div>
         <div className="w-full m-6 bg-white p-6">
           <p>{t("SCHOOL_DESC")}</p>
