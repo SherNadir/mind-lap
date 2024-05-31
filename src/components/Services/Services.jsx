@@ -15,7 +15,7 @@ import { useTranslation } from "@/app/i18n/client";
 export const Services = ({ lng }) => {
   const { t } = useTranslation(lng);
   return (
-    <div className="relative flex flex-col items-center text-center bg-white min-h-[320px] justify-center mt-14 pb-12">
+    <div className="relative flex flex-col items-center text-center bg-white min-h-[320px] justify-center  pb-12">
       <div className="flex flex-col items-center w-4/5">
         <p className="mt-5 text-4xl text-primary font-semibold">
           {t("OUR_SERVICES")}
