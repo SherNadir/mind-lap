@@ -2,7 +2,6 @@
 
 import React, { Fragment, useEffect, useState } from "react";
 import { Logo } from "@/svgs/icons";
-import { poppins } from "@/app/[lng]/fonts";
 import {
   Disclosure,
   DisclosureButton,
@@ -19,8 +18,6 @@ import Link from "next/link";
 import cls from "classnames";
 import { ArrowDownIcon } from "@/svgs/icons";
 import { navigation } from "./data";
-import { Trans } from "react-i18next";
-import { languages } from "@/app/i18n/settings";
 import { usePathname, useRouter } from "next/navigation";
 
 export const Navbar = ({ lng }) => {
@@ -28,12 +25,14 @@ export const Navbar = ({ lng }) => {
   const menuItems = ["Update Profile Image", "Account Settings", "Log Out"];
   const pathname = usePathname();
   const router = useRouter();
+  const parts = pathname?.split("/");
+  const lastPart = parts[parts.length - 1];
 
   useEffect(() => {
-    const parts = pathname?.split("/");
-    const lastPart = parts[parts.length - 1];
     setActiveLink(`/${lastPart}`);
   }, [router, pathname]);
+
+  const newLocale = pathname.includes("/en") ? "de" : "en";
 
   return (
     <Disclosure as="div" className="bg-white relative z-10">
@@ -53,11 +52,16 @@ export const Navbar = ({ lng }) => {
               <div className="text-primary">
                 <Logo />
               </div>
-              <div className="bg-primary w-10 h-8 rounded-full flex lg:hidden items-center  justify-center text-white mr-14 hover:bg-primary-200 cursor-pointer">
-                <Link href={`${pathname === "/en" ? "/de" : "en"}`}>
-                  {pathname === "/en" ? "de" : "en"}
-                </Link>
-              </div>
+              <Link
+                className="bg-primary w-10 h-8 rounded-full flex lg:hidden items-center  justify-center text-white mr-14 hover:bg-primary-200 cursor-pointer"
+                href={`${
+                  pathname === "/en" || pathname === "/de"
+                    ? `${lng === "en" ? "de" : "en"}`
+                    : `/${lng === "en" ? "de" : "en"}/${lastPart}`
+                }`}
+              >
+                {newLocale}
+              </Link>
               <div className="hidden lg:flex items-center gap-4">
                 <ul className="flex gap-8">
                   <li
@@ -79,7 +83,7 @@ export const Navbar = ({ lng }) => {
                         "text-primary": activeLink === "/dashboard",
                       }
                     )}
-                    onClick={() => router.push("/dashboard")}
+                    onClick={() => router.push(`/${lng}/dashboard`)}
                   >
                     Dashboard
                   </li>
@@ -128,15 +132,16 @@ export const Navbar = ({ lng }) => {
                     Team
                   </li>
                 </ul>
-                <div className="bg-primary w-[60px] h-8 rounded-full flex items-center  justify-center text-white hover:bg-primary-200 cursor-pointer">
-                  <Link
-                    href={`/${
-                      pathname === "/en" || pathname === "/" ? "de" : "en"
-                    }`}
-                  >
-                    {pathname === "/en" || pathname === "/" ? "de" : "en"}
-                  </Link>
-                </div>
+                <Link
+                  className="bg-primary w-[60px] h-8 rounded-full flex items-center  justify-center text-white hover:bg-primary-200 cursor-pointer"
+                  href={`${
+                    pathname === "/en" || pathname === "/de"
+                      ? `${lng === "en" ? "de" : "en"}`
+                      : `/${lng === "en" ? "de" : "en"}/${lastPart}`
+                  }`}
+                >
+                  {newLocale}
+                </Link>
               </div>
               <div className=" gap-5 hidden lg:flex items-center">
                 <button className={` text-sm font-medium text-dark`}>

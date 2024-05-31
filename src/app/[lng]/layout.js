@@ -18,7 +18,7 @@ export default function RootLayout({ children, params: { lng } }) {
     <html lang={lng}>
       <body className={urbanist.className}>
         <main className="">
-          <Navbar />
+          <Navbar lng={lng} />
           {children}
           <Footer />
         </main>
