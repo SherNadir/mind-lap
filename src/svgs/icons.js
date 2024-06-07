@@ -36,3 +36,5 @@ export { HeartIcon } from "./HeartIcon";
 export { PathIcon } from "./PathIcon";
 export { LighteningIcon } from "./LighteningIcon";
 export { BookIcon } from "./BookIcon";
+export { TextLogo } from "./TextLogo";
+export { PointerIcon } from "./PointerIcon";
