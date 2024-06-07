@@ -1,7 +1,7 @@
 "use client";
 
 import React, { Fragment, useEffect, useState } from "react";
-import { Logo } from "@/svgs/icons";
+import { Logo, TextLogo } from "@/svgs/icons";
 import {
   Disclosure,
   DisclosureButton,
@@ -66,7 +66,7 @@ export const DashboardNavbar = ({ lng }) => {
                 className="text-primary cursor-pointer"
                 onClick={() => router.push("/")}
               >
-                <Logo className="w-40 md:w-full" />
+                <TextLogo className="w-40 md:w-full" />
               </div>
 
               <div className=" gap-5 hidden md:flex items-center">
