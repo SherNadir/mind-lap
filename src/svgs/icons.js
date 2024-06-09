@@ -38,3 +38,6 @@ export { LighteningIcon } from "./LighteningIcon";
 export { BookIcon } from "./BookIcon";
 export { TextLogo } from "./TextLogo";
 export { PointerIcon } from "./PointerIcon";
+export { BackIcon } from "./BackIcon";
+export { QuestionIcon } from "./QuestionIcon";
+export { PinkRobot } from "./PinkRobot";

@@ -18,13 +18,13 @@ export default function DashboardLayout({ children, params: { lng } }) {
   return (
     <html lang={lng}>
       <body className={urbanist.className}>
-        <main className="bg-[#E9EFF2] h-screen">
+        <main className="bg-[#E9EFF2] ">
           <DashboardNavbar lng={lng} />
-          <div className="flex h-[60vh]">
+          <div className="flex h-full">
             <div>
               <Sidebar lng={lng} />
             </div>
-            <div className="">
+            <div className="w-full mb-8">
               {children}
               <div>
                 <DashboardFooter />

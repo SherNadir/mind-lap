@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import React from "react";
@@ -7,9 +7,9 @@ import Image from "next/image";
 
 export const DashboardFooter = () => {
   return (
-    <div className=" py-4 m-6 bg-white ">
+    <div className=" py-4 mx-6 bg-white ">
       <div className="container mx-auto px-4 ">
-        <div className="flex flex-col lg:flex lg:flex-row items-center gap-10 md:gap-0 justify-around">
+        <div className="flex flex-col lg:flex lg:flex-row items-center lg:items-start gap-10 md:gap-0 justify-around">
           <div className="flex flex-col gap-10 justify-center">
             <div className="text-center w-full">
               <div className="text-primary">

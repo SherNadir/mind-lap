@@ -72,12 +72,12 @@ const config: Config = {
         success: {
           light: "#9CD2B2",
           DEFAULT: "#1ECA63",
-          100: "#77DD83"
+          100: "#77DD83",
         },
         primary: {
           DEFAULT: "#75D481",
           100: "#FBFFFB",
-          200: "#37B547"
+          200: "#37B547",
         },
         dark: {
           light: "#070707",
@@ -98,13 +98,15 @@ const config: Config = {
         },
         grey: {
           light: "#BEBEBE",
+          100: "#EDEDED",
           200: "#E0E0E0",
           300: "#A1AEBE",
           400: "#828282",
           500: "#9699A3",
           600: "#E3EBFF",
           700: "#9BAC9D",
-          800: "#667A8A"
+          800: "#667A8A",
+          900: "#8F8A8A",
         },
         white: {
           DEFAULT: "#FFFFFF",
