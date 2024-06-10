@@ -1,10 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  BackIcon,
-  InfoIcon,
-} from "@/svgs/icons";
+import { BackIcon, InfoIcon } from "@/svgs/icons";
 import { useTranslation } from "@/app/i18n/client";
 import { useRouter } from "next/navigation";
 

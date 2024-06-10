@@ -1,9 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  PinkRobot,
-} from "@/svgs/icons";
+import { PinkRobot } from "@/svgs/icons";
 import Image from "next/image";
 import { useTranslation } from "@/app/i18n/client";
 
@@ -11,7 +9,7 @@ export const Discovery = ({ lng }) => {
   const { t } = useTranslation(lng);
 
   return (
-    <div>
+    <div className="min-h-[75vh]">
       <div className="mt-10 flex flex-col gap-5">
         <div>
           <p className="text-4xl font-medium text-dark-700">Career Explorer</p>
