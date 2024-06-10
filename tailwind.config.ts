@@ -92,6 +92,7 @@ const config: Config = {
         },
         warning: {
           DEFAULT: "#FF6B2C",
+          100: "#F9C816"
         },
         danger: {
           DEFAULT: "#EB3838",
@@ -107,6 +108,7 @@ const config: Config = {
           700: "#9BAC9D",
           800: "#667A8A",
           900: "#8F8A8A",
+          1000: "#E9EFF2"
         },
         white: {
           DEFAULT: "#FFFFFF",

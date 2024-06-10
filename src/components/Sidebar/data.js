@@ -1,4 +1,5 @@
 import {
+  CapIcon,
   CareersIcon,
   GoalsIcon,
   HomeIcon,
@@ -10,9 +11,9 @@ import {
 
 export const navigation = [
   {
-    id: "home",
-    name: "Home",
-    href: "/",
+    id: "dashboard",
+    name: "Dashboard",
+    href: "/dashboard",
     icon: <HomeIcon className="w-5 h-5" aria-hidden="true" />,
     current: true,
   },
@@ -27,14 +28,14 @@ export const navigation = [
     id: "career-finder",
     name: "Career Finder",
     href: "/career-finder",
-    icon: <SettingsIcon className="w-6 h-6" aria-hidden="true" />,
+    icon: <CapIcon className="w-6 h-6" aria-hidden="true" />,
     current: false,
   },
   {
     id: "ask-ai",
     name: "Ask AI",
     href: "/ask-ai",
-    icon: <TeamsIcon className="w-6 h-6" aria-hidden="true" />,
+    icon: <TeamsIcon className="w-8 h-8" aria-hidden="true" />,
     current: false,
   },
   {

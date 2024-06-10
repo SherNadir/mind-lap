@@ -22,18 +22,18 @@ export const Sidebar = ({lng}) => {
 
   const newLocale = pathname.includes("/en") ? "de" : "en";
   return (
-    <div className="h-[84.5vh] bg-white  w-80 my-6  px-6 pt-10 hidden md:flex flex-col justify-between">
+    <div className="bg-white  w-80 my-6  px-6 pt-10 hidden md:flex flex-col justify-between">
       <div>
         {navigation?.map((item, index) => {
           return (
-            <Link
+            <div
               key={index}
               className={cls(
                 `flex items-center justify-between p-4 mb-2.5 w-full h-16  rounded-2xl cursor-pointer hover:bg-primary hover:text-white  ${
                   activeLink === item.id ? "text-white bg-primary" : "text-dark"
                 }`
               )}
-              href={`/${item.href}`}
+              onClick={() => router.push(`/${lng}/${item.href}`)}
             >
               <div className="flex items-center">
                 <button type="button">{item.icon}</button>
@@ -41,7 +41,7 @@ export const Sidebar = ({lng}) => {
                   <p className="  text-sm	">{item.name}</p>
                 </div>
               </div>
-            </Link>
+            </div>
           );
         })}
       </div>

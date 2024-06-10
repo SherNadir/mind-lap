@@ -9,7 +9,7 @@ export const DashboardFooter = () => {
   return (
     <div className=" py-4 mx-6 bg-white ">
       <div className="container mx-auto px-4 ">
-        <div className="flex flex-col lg:flex lg:flex-row items-center lg:items-start gap-10 md:gap-0 justify-around">
+        <div className="flex flex-col lg:flex lg:flex-row items-center lg:items-start gap-10 lg:gap-0 justify-around">
           <div className="flex flex-col gap-10 justify-center">
             <div className="text-center w-full">
               <div className="text-primary">
@@ -44,9 +44,9 @@ export const DashboardFooter = () => {
               </div>
             </div>
           </div>
-          <div className="text-dark-700 flex flex-col items-center md:items-start">
+          <div className="text-dark-700 flex flex-col items-center lg:items-start">
             <h1 className="text-2xl font-medium">Help Links</h1>
-            <div className="flex flex-col gap-2 mt-6 items-center md:items-start">
+            <div className="flex flex-col gap-2 mt-6 items-center lg:items-start">
               <Link
                 href={"#"}
                 className="font-light text-lg text-dark-700 hover:text-primary w-fit "
@@ -73,9 +73,9 @@ export const DashboardFooter = () => {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col items-center  md:items-start">
+          <div className="flex flex-col items-center  lg:items-start">
             <h1 className="text-2xl font-medium text-dark-700">Legal</h1>
-            <div className="flex flex-col gap-2 mt-6 items-center md:items-start">
+            <div className="flex flex-col gap-2 mt-6 items-center lg:items-start">
               <Link
                 href={"#"}
                 className="font-light text-lg text-dark-700 hover:text-primary w-fit "
@@ -96,12 +96,12 @@ export const DashboardFooter = () => {
               </Link>
             </div>
           </div>
-          <div className="text-dark-700 flex flex-col items-center md:items-start">
+          <div className="text-dark-700 flex flex-col items-center lg:items-start">
             <h1 className="text-2xl font-medium">Contact</h1>
             <p className="text-dark-700 mt-6 text-text-lg font-light">
               maxmuster@gmail.com
             </p>
-            <div className="text-dark-700 flex items-center md:items-start gap-4 mt-2.5 ">
+            <div className="text-dark-700 flex items-center lg:items-start gap-4 mt-2.5 ">
               <PointerIcon />
               <p className="text-text-lg font-light text-dark-700">
                 Zurich Switzerland

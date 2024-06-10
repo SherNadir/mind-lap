@@ -14,7 +14,7 @@ export const metadata = {
   description: "AI driven Career Guidance",
 };
 
-export default function DashboardLayout({ children, params: { lng } }) {
+export default function SelfDiscoveryLayout({ children, params: { lng } }) {
   return (
     <html lang={lng}>
       <body className={urbanist.className}>

@@ -41,3 +41,4 @@ export { PointerIcon } from "./PointerIcon";
 export { BackIcon } from "./BackIcon";
 export { QuestionIcon } from "./QuestionIcon";
 export { PinkRobot } from "./PinkRobot";
+export { CapIcon } from "./CapIcon";

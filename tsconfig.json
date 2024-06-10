@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     "src/app/[lng]/second-page/page.js",
     "src/app/[lng]/(home)/page.js"
-  ],
+, "src/svgs/GamifiedIcon.jsx", "src/svgs/ExploreIcon.jsx"  ],
   "exclude": ["node_modules"]
 }

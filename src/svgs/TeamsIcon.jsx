@@ -1,17 +1,146 @@
 export const TeamsIcon = (props) => {
   return (
     <svg
-      width="28"
-      height="24"
-      viewBox="0 0 28 24"
+      width="64px"
+      height="64px"
+      viewBox="0 0 400 400"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <path
-        d="M22.7485 14.6928C25.2818 14.6928 27.3337 16.7101 27.3337 19.199C27.3337 21.6864 25.2818 23.7037 22.7485 23.7037C20.2167 23.7037 18.1633 21.6864 18.1633 19.199C18.1633 16.7101 20.2167 14.6928 22.7485 14.6928ZM11.4447 17.2773C12.5543 17.2773 13.4551 18.1622 13.4551 19.2524C13.4551 20.3411 12.5543 21.2275 11.4447 21.2275H2.67735C1.56773 21.2275 0.666992 20.3411 0.666992 19.2524C0.666992 18.1622 1.56773 17.2773 2.67735 17.2773H11.4447ZM5.25215 0C7.78547 0 9.83731 2.01731 9.83731 4.50475C9.83731 6.99364 7.78547 9.01095 5.25215 9.01095C2.72031 9.01095 0.666992 6.99364 0.666992 4.50475C0.666992 2.01731 2.72031 0 5.25215 0ZM25.3248 2.5311C26.4329 2.5311 27.3337 3.41604 27.3337 4.50475C27.3337 5.59491 26.4329 6.47985 25.3248 6.47985H16.5574C15.4478 6.47985 14.5471 5.59491 14.5471 4.50475C14.5471 3.41604 15.4478 2.5311 16.5574 2.5311H25.3248Z"
-        fill="#010002"
+      <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        stroke="#CCCCCC"
+        strokeWidth="2.4"
       />
+
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M97.8357 54.6682C177.199 59.5311 213.038 52.9891 238.043 52.9891C261.298 52.9891 272.24 129.465 262.683 152.048C253.672 173.341 100.331 174.196 93.1919 165.763C84.9363 156.008 89.7095 115.275 89.7095 101.301"
+          stroke="currentColor"
+          strokeOpacity="0.9"
+          strokeWidth="23.199999999999996"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+        <path
+          d="M98.3318 190.694C-10.6597 291.485 121.25 273.498 148.233 295.083"
+          stroke="currentColor"
+          strokeOpacity="0.9"
+          strokeWidth="23.199999999999996"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+        <path
+          d="M98.3301 190.694C99.7917 213.702 101.164 265.697 100.263 272.898"
+          stroke="currentColor"
+          strokeOpacity="0.9"
+          strokeWidth="23.199999999999996"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+        <path
+          d="M208.308 136.239C208.308 131.959 208.308 127.678 208.308 123.396"
+          stroke="currentColor"
+          strokeOpacity="0.9"
+          strokeWidth="23.199999999999996"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+        <path
+          d="M177.299 137.271C177.035 133.883 177.3 126.121 177.3 123.396"
+          stroke="currentColor"
+          strokeOpacity="0.9"
+          strokeWidth="23.199999999999996"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+        <path
+          d="M203.398 241.72C352.097 239.921 374.881 226.73 312.524 341.851"
+          stroke="currentColor"
+          strokeOpacity="0.9"
+          strokeWidth="23.199999999999996"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+        <path
+          d="M285.55 345.448C196.81 341.85 136.851 374.229 178.223 264.504"
+          stroke="currentColor"
+          strokeOpacity="0.9"
+          strokeWidth="23.199999999999996"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+        <path
+          d="M180.018 345.448C160.77 331.385 139.302 320.213 120.658 304.675"
+          stroke="currentColor"
+          strokeOpacity="0.9"
+          strokeWidth="23.199999999999996"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+        <path
+          d="M218.395 190.156C219.024 205.562 219.594 220.898 219.594 236.324"
+          stroke="currentColor"
+          strokeOpacity="0.9"
+          strokeWidth="23.199999999999996"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+        <path
+          d="M218.395 190.156C225.896 202.037 232.97 209.77 241.777 230.327"
+          stroke="currentColor"
+          strokeOpacity="0.9"
+          strokeWidth="23.199999999999996"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+        <path
+          d="M80.1174 119.041C75.5996 120.222 71.0489 119.99 66.4414 120.41"
+          stroke="currentColor"
+          strokeOpacity="0.9"
+          strokeWidth="23.199999999999996"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+        <path
+          d="M59.5935 109.469C59.6539 117.756 59.5918 125.915 58.9102 134.086"
+          stroke="currentColor"
+          strokeOpacity="0.9"
+          strokeWidth="23.199999999999996"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+        <path
+          d="M277.741 115.622C281.155 115.268 284.589 114.823 287.997 114.255"
+          stroke="currentColor"
+          strokeOpacity="0.9"
+          strokeWidth="23.199999999999996"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+        <path
+          d="M291.412 104.682C292.382 110.109 292.095 115.612 292.095 121.093"
+          stroke="currentColor"
+          strokeOpacity="0.9"
+          strokeWidth="23.199999999999996"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+        <path
+          d="M225.768 116.466C203.362 113.993 181.657 115.175 160.124 118.568"
+          stroke="currentColor"
+          strokeOpacity="0.9"
+          strokeWidth="23.199999999999996"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />{" "}
+      </g>
     </svg>
   );
 };
