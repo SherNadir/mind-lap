@@ -1,11 +1,8 @@
 import {
   CapIcon,
-  CareersIcon,
   GoalsIcon,
   HomeIcon,
   InfoIcon,
-  Logo,
-  SettingsIcon,
   TeamsIcon,
 } from "@/svgs/icons";
 
@@ -24,13 +21,13 @@ export const navigation = [
     icon: <GoalsIcon className="w-6 h-6" aria-hidden="true" />,
     current: false,
   },
-  {
-    id: "career-finder",
-    name: "Career Finder",
-    href: "/career-finder",
-    icon: <CapIcon className="w-6 h-6" aria-hidden="true" />,
-    current: false,
-  },
+  // {
+  //   id: "career-finder",
+  //   name: "Career Finder",
+  //   href: "/career-finder",
+  //   icon: <CapIcon className="w-6 h-6" aria-hidden="true" />,
+  //   current: false,
+  // },
   {
     id: "ask-ai",
     name: "Ask AI",

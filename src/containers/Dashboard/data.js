@@ -3,7 +3,6 @@ import {
   GoalsIcon,
   HomeIcon,
   InfoIcon,
-  Logo,
   SettingsIcon,
   TeamsIcon,
 } from "@/svgs/icons";

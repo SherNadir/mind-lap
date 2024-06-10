@@ -1,11 +1,22 @@
 "use client";
 
 import React from "react";
-import { BackIcon, GoalsIcon, InfoIcon } from "@/svgs/icons";
+import {
+  BackIcon,
+  CareerFinderIcon,
+  DiscoveryIcon,
+  ExploreCareersIcon,
+  GameIcon,
+  GoalsIcon,
+  InfoIcon,
+  MentorIcon,
+  TestIcon,
+} from "@/svgs/icons";
 import { useTranslation } from "@/app/i18n/client";
 import { useRouter } from "next/navigation";
 
 export const Home = ({ lng }) => {
+  const router = useRouter();
   return (
     <div className="mb-0 mt-16 lg:mt-0 md:my-0  w-full ">
       <div className="relative  w-full m-auto flex h-full">
@@ -24,10 +35,10 @@ export const Home = ({ lng }) => {
               <InfoIcon className="w-8 h-8" />
             </div>
           </div>
-          <div className="grid grid-col gap-5 w-full sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-6  ">
-            <div className="flex flex-col bg-white w-full md:w-40 md:min-w-60 md:max-w-60  p-6 border-2  drop-shadow-[0_0_0_rgba(186,186,186,0.25)]">
+          <div className="grid grid-col gap-5 w-full sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5  my-6">
+            <div className="flex flex-col bg-white w-full md:min-w-40 md:max-w-60  p-6 border-2  drop-shadow-[0_0_0_rgba(186,186,186,0.25)] hover:border-primary cursor-pointer">
               <div className="flex items-center justify-center">
-                <GoalsIcon />
+                <DiscoveryIcon />
               </div>
               <div>
                 <p className="text-base font-semibold text-primary text-center mt-3">
@@ -42,19 +53,19 @@ export const Home = ({ lng }) => {
                 <p className="text-xs font-normal text-primary pb-2.5 text-start mt-6">
                   Read more
                 </p>
-                <div className="w-[30%] h-[1px] bg-warning-100" />
+                <div className="w-[60px] h-[2px] bg-warning-100" />
               </div>
             </div>
-            <div className="flex flex-col bg-white w-full md:w-40 md:min-w-60 md:max-w-60  p-6 border-2  drop-shadow-[0_0_0_rgba(186,186,186,0.25)]">
+            <div className="flex flex-col bg-white w-full md:min-w-40 md:max-w-60  p-6 border-2  drop-shadow-[0_0_0_rgba(186,186,186,0.25)] hover:border-primary cursor-pointer hover:drop-shadow-[0_0_0_rgba(117,212,129,0.25)]">
               <div className="flex items-center justify-center">
-                <GoalsIcon />
+                <CareerFinderIcon />
               </div>
               <div>
                 <p className="text-base font-semibold text-primary text-center mt-3">
-                  Self Discovery
+                  AI Career Finder
                 </p>
                 <p className="text-base font-medium text-dark-700 text-center mt-2">
-                  Explore your Interests and Skills
+                  Let AI guide you to your dream career
                 </p>
               </div>
 
@@ -62,19 +73,19 @@ export const Home = ({ lng }) => {
                 <p className="text-xs font-normal text-primary pb-2.5 text-start mt-6">
                   Read more
                 </p>
-                <div className="w-[30%] h-[1px] bg-warning-100" />
+                <div className="w-[60px] h-[2px] bg-warning-100" />
               </div>
             </div>
-            <div className="flex flex-col bg-white w-full md:w-40 md:min-w-60 md:max-w-60  p-6 border-2  drop-shadow-[0_0_0_rgba(186,186,186,0.25)]">
+            <div className="flex flex-col bg-white w-full md:min-w-40 md:max-w-60  p-6 border-2  drop-shadow-[0_0_0_rgba(186,186,186,0.25)] hover:border-primary cursor-pointer hover:drop-shadow-[0_0_0_rgba(117,212,129,0.25)]">
               <div className="flex items-center justify-center">
-                <GoalsIcon />
+                <ExploreCareersIcon />
               </div>
               <div>
                 <p className="text-base font-semibold text-primary text-center mt-3">
-                  Self Discovery
+                  Explore Careers
                 </p>
                 <p className="text-base font-medium text-dark-700 text-center mt-2">
-                  Explore your Interests and Skills
+                  Let AI guide you to your dream career
                 </p>
               </div>
 
@@ -82,19 +93,19 @@ export const Home = ({ lng }) => {
                 <p className="text-xs font-normal text-primary pb-2.5 text-start mt-6">
                   Read more
                 </p>
-                <div className="w-[30%] h-[1px] bg-warning-100" />
+                <div className="w-[60px] h-[2px] bg-warning-100" />
               </div>
             </div>
-            <div className="flex flex-col bg-white w-full md:w-40 md:min-w-60 md:max-w-60  p-6 border-2  drop-shadow-[0_0_0_rgba(186,186,186,0.25)]">
+            <div className="flex flex-col bg-white w-full md:min-w-40 md:max-w-60  p-6 border-2  drop-shadow-[0_0_0_rgba(186,186,186,0.25)] hover:border-primary cursor-pointer hover:drop-shadow-[0_0_0_rgba(117,212,129,0.25)]">
               <div className="flex items-center justify-center">
-                <GoalsIcon />
+                <TestIcon />
               </div>
               <div>
                 <p className="text-base font-semibold text-primary text-center mt-3">
-                  Self Discovery
+                  Career Assessment
                 </p>
                 <p className="text-base font-medium text-dark-700 text-center mt-2">
-                  Explore your Interests and Skills
+                  Let AI guide you to your dream career
                 </p>
               </div>
 
@@ -102,19 +113,19 @@ export const Home = ({ lng }) => {
                 <p className="text-xs font-normal text-primary pb-2.5 text-start mt-6">
                   Read more
                 </p>
-                <div className="w-[30%] h-[1px] bg-warning-100" />
+                <div className="w-[60px] h-[2px] bg-warning-100" />
               </div>
             </div>
-            <div className="flex flex-col bg-white w-full md:w-40 md:min-w-60 md:max-w-60  p-6 border-2  drop-shadow-[0_0_0_rgba(186,186,186,0.25)]">
+            <div className="flex flex-col bg-white w-full md:min-w-40 md:max-w-60  p-6 border-2  drop-shadow-[0_0_0_rgba(186,186,186,0.25)] hover:border-primary cursor-pointer hover:drop-shadow-[0_0_0_rgba(117,212,129,0.25)]">
               <div className="flex items-center justify-center">
                 <GoalsIcon />
               </div>
               <div>
                 <p className="text-base font-semibold text-primary text-center mt-3">
-                  Self Discovery
+                  Goals
                 </p>
                 <p className="text-base font-medium text-dark-700 text-center mt-2">
-                  Explore your Interests and Skills
+                  Let AI guide you to your dream career
                 </p>
               </div>
 
@@ -122,19 +133,19 @@ export const Home = ({ lng }) => {
                 <p className="text-xs font-normal text-primary pb-2.5 text-start mt-6">
                   Read more
                 </p>
-                <div className="w-[30%] h-[1px] bg-warning-100" />
+                <div className="w-[60px] h-[2px] bg-warning-100" />
               </div>
             </div>
-            <div className="flex flex-col bg-white w-full md:w-40 md:min-w-60 md:max-w-60  p-6 border-2  drop-shadow-[0_0_0_rgba(186,186,186,0.25)]">
+            <div className="flex flex-col bg-white w-full md:min-w-40 md:max-w-60  p-6 border-2  drop-shadow-[0_0_0_rgba(186,186,186,0.25)] hover:border-primary cursor-pointer hover:drop-shadow-[0_0_0_rgba(117,212,129,0.25)]">
               <div className="flex items-center justify-center">
-                <GoalsIcon />
+                <MentorIcon />
               </div>
               <div>
                 <p className="text-base font-semibold text-primary text-center mt-3">
-                  Self Discovery
+                  Ai Mentor
                 </p>
                 <p className="text-base font-medium text-dark-700 text-center mt-2">
-                  Explore your Interests and Skills
+                  Let AI guide you to your dream career
                 </p>
               </div>
 
@@ -142,19 +153,19 @@ export const Home = ({ lng }) => {
                 <p className="text-xs font-normal text-primary pb-2.5 text-start mt-6">
                   Read more
                 </p>
-                <div className="w-[30%] h-[1px] bg-warning-100" />
+                <div className="w-[60px] h-[2px] bg-warning-100" />
               </div>
             </div>
-            <div className="flex flex-col bg-white w-full md:w-40 md:min-w-60 md:max-w-60  p-6 border-2  drop-shadow-[0_0_0_rgba(186,186,186,0.25)]">
+            <div className="flex flex-col bg-white w-full md:min-w-40 md:max-w-60  p-6 border-2  drop-shadow-[0_0_0_rgba(186,186,186,0.25)] hover:border-primary cursor-pointer hover:drop-shadow-[0_0_0_rgba(117,212,129,0.25)]">
               <div className="flex items-center justify-center">
-                <GoalsIcon />
+                <GameIcon />
               </div>
               <div>
                 <p className="text-base font-semibold text-primary text-center mt-3">
-                  Self Discovery
+                  Personalized Gamified
                 </p>
                 <p className="text-base font-medium text-dark-700 text-center mt-2">
-                  Explore your Interests and Skills
+                  Let AI guide you to your dream career
                 </p>
               </div>
 
@@ -162,7 +173,7 @@ export const Home = ({ lng }) => {
                 <p className="text-xs font-normal text-primary pb-2.5 text-start mt-6">
                   Read more
                 </p>
-                <div className="w-[30%] h-[1px] bg-warning-100" />
+                <div className="w-[60px] h-[2px] bg-warning-100" />
               </div>
             </div>
           </div>

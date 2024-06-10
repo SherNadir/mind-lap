@@ -1,14 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
 import cls from "classnames";
 import { navigation } from "./data";
 import { usePathname, useRouter } from "next/navigation";
 import { useTranslation } from "@/app/i18n/client";
+import { LogoutIcon } from "@/svgs/LogoutIcon";
 
-export const Sidebar = ({lng}) => {
-    const { t } = useTranslation(lng);
+export const Sidebar = ({ lng }) => {
+  const { t } = useTranslation(lng);
   const [activeLink, setActiveLink] = useState("home");
   const menuItems = ["Update Profile Image", "Account Settings", "Log Out"];
   const pathname = usePathname();
@@ -45,8 +45,9 @@ export const Sidebar = ({lng}) => {
           );
         })}
       </div>
-      <div className="h-10 bg-grey-800 w-full rounded-xl flex items-center justify-center mb-5 hover:bg-grey-300 cursor-pointer">
-        <p className="text-white">logout</p>
+      <div className="h-12 bg-grey-800 w-full rounded-lg flex items-center justify-start mb-5 hover:bg-grey-300 cursor-pointer gap-4">
+        <LogoutIcon className="w-6 h-6 ml-10" />
+        <p className="text-white text-base font-semibold">logout</p>
       </div>
     </div>
   );
