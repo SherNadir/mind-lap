@@ -6,11 +6,11 @@ import { useInbox } from "@/contexts/Inbox";
 import { useScreenWidth } from "@/hooks";
 import ContentWrapper from "@/components/ContentWrapper";
 
-export const AskAI = () => {
+export const AskAI = ({ lng }) => {
   const { selectedContact } = useInbox();
   const width = useScreenWidth();
   return (
-    <ContentWrapper pageName="Ask AI">
+    <ContentWrapper lng={lng} pageName="Ask AI">
       <ChatRoom />
     </ContentWrapper>
   );
