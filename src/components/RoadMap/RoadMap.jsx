@@ -16,7 +16,7 @@ import {
 export const RoadMap = ({ lng }) => {
   const { t } = useTranslation(lng);
   return (
-    <div className="relative">
+    <div id="roadmap" className="relative">
       <div className=" flex flex-col items-center text-start  min-h-[320px] justify-center pb-12 mt-12 w-4/5 m-auto">
         <div className="flex flex-col items-start mt-12 w-full">
           <p className="mt-20 sm:mt-5 text-base text-primary font-semibold">

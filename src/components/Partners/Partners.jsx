@@ -15,7 +15,10 @@ import { useTranslation } from "@/app/i18n/client";
 export const Partners = ({ lng }) => {
   const { t } = useTranslation(lng);
   return (
-    <div className="relative flex flex-col items-center text-center bg-white min-h-[320px] justify-center pb-12">
+    <div
+      id="partners"
+      className="relative flex flex-col items-center text-center bg-white min-h-[320px] justify-center pb-12"
+    >
       <div className="flex flex-col items-center mt-12">
         <DotMatrixIcon />
         <p className="mt-5 text-6xl text-dark-300 font-semibold">

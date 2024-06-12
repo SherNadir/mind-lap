@@ -40,7 +40,10 @@ export const MeetTeam = ({ lng }) => {
     },
   ];
   return (
-    <div className="relative flex flex-col text-center bg-white  pb-12 mt-12 ">
+    <div
+      id="team"
+      className="relative flex flex-col text-center bg-white  pb-12 mt-12 "
+    >
       <div className="w-4/5 mx-auto">
         <div className="pt-16 flex flex-col justify-center items-center">
           <p className="text-primary text-base">{t("WHO_WE_ARE")}</p>

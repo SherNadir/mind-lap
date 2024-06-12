@@ -94,7 +94,13 @@ export const Navbar = ({ lng }) => {
                         "text-primary": activeLink === "/partners",
                       }
                     )}
-                    onClick={() => router.push("/partners")}
+                    onClick={() => {
+                      const anchor = document.querySelector("#partners");
+                      anchor.scrollIntoView({
+                        behavior: "smooth",
+                        block: "center",
+                      });
+                    }}
                   >
                     Partners
                   </li>
@@ -105,7 +111,13 @@ export const Navbar = ({ lng }) => {
                         "text-primary": activeLink === "/services",
                       }
                     )}
-                    onClick={() => router.push("/services")}
+                    onClick={() => {
+                      const anchor = document.querySelector("#services");
+                      anchor.scrollIntoView({
+                        behavior: "smooth",
+                        block: "center",
+                      });
+                    }}
                   >
                     Services
                   </li>
@@ -116,7 +128,13 @@ export const Navbar = ({ lng }) => {
                         "text-primary": activeLink === "/roadmap",
                       }
                     )}
-                    onClick={() => router.push("/roadmap")}
+                    onClick={() => {
+                      const anchor = document.querySelector("#roadmap");
+                      anchor.scrollIntoView({
+                        behavior: "smooth",
+                        block: "center",
+                      });
+                    }}
                   >
                     Roadmap
                   </li>
@@ -127,7 +145,13 @@ export const Navbar = ({ lng }) => {
                         "text-primary": activeLink === "/team",
                       }
                     )}
-                    onClick={() => router.push("/team")}
+                    onClick={() => {
+                      const anchor = document.querySelector("#team");
+                      anchor.scrollIntoView({
+                        behavior: "smooth",
+                        block: "center",
+                      });
+                    }}
                   >
                     Team
                   </li>
