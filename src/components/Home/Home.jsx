@@ -26,7 +26,7 @@ export const Home = ({ lng }) => {
   return (
     <div className="mb-0 mt-16 lg:mt-0 md:my-0  w-full ">
       <div className="relative  w-full m-auto flex h-full">
-        <div className="w-full m-6 min-h-[90vh] p-8">
+        <div className="w-full m-6 min-h-[90vh] px-8">
           <div className="flex justify-between items-center">
             <div
               className="bg-grey-100 rounded-full h-8 w-8 flex items-center justify-center cursor-pointer hover:text-primary"
