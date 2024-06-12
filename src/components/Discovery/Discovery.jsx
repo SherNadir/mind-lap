@@ -31,7 +31,7 @@ export const Discovery = ({ lng }) => {
           </div>
         </div>
       </div>
-      <div className="mt-10 flex gap-10 flex-wrap xl:flex-nowrap w-full">
+      <div className="mt-10 flex gap-10 flex-wrap xl:flex-nowrap w-full h-[380px]">
         <div className="w-full xl:w-[50%]">
           <div className="flex gap-4 border border-dark-900 rounded-lg py-5 px-3 mb-6 h-32 min-h-32">
             <div className="">
