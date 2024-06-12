@@ -180,6 +180,7 @@ export { ExploreCareersIcon } from "./ExploreCareersIcon";
 export { TestIcon } from "./TestIcon";
 export { MentorIcon } from "./MentorIcon";
 export { GameIcon } from "./GameIcon";
+export { LinesIcon } from "./LinesIcon";
 
 export const GlobeIcon = () => {
   return (

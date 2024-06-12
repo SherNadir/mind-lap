@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import {
   BackIcon,
   CareerFinderIcon,
@@ -14,9 +14,15 @@ import {
 } from "@/svgs/icons";
 import { useTranslation } from "@/app/i18n/client";
 import { useRouter } from "next/navigation";
+import { useModals } from "@/contexts/Modals";
 
 export const Home = ({ lng }) => {
+  const { setTour, tour } = useModals();
   const router = useRouter();
+
+  useEffect(() => {
+    setTour(true);
+  }, []);
   return (
     <div className="mb-0 mt-16 lg:mt-0 md:my-0  w-full ">
       <div className="relative  w-full m-auto flex h-full">
