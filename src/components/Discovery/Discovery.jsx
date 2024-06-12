@@ -83,6 +83,7 @@ export const Discovery = ({ lng }) => {
             alt="kids"
             width={470}
             height={470}
+            style={{ borderRadius: "20px" }}
           />
         </div>
       </div>
