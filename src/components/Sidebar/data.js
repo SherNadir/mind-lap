@@ -38,7 +38,7 @@ export const navigation = [
   {
     id: "help",
     name: "Help",
-    href: "/help",
+    href: "/",
     icon: <InfoIcon className="w-6 h-6" aria-hidden="true" />,
     current: false,
   },

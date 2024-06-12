@@ -29,8 +29,8 @@ export const Sidebar = ({ lng }) => {
             <div
               key={index}
               className={cls(
-                `flex items-center justify-between p-4 mb-2.5 w-full h-16  rounded-2xl cursor-pointer hover:bg-primary hover:text-white  ${
-                  activeLink === item.id ? "text-white bg-primary" : "text-dark"
+                `flex items-center justify-between p-4 mb-2.5 w-full h-16  rounded-2xl cursor-pointer hover:bg-primary-200 hover:text-white  ${
+                  lastPart === item.id ? "text-white bg-primary" : "text-dark"
                 }`
               )}
               onClick={() => router.push(`/${lng}/${item.href}`)}
