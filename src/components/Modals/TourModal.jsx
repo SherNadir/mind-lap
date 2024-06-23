@@ -6,7 +6,7 @@ import Button from "@/components/Button";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-export const TourModal = () => {
+export const TourModal = ({lng}) => {
   const steps = [
     {
       id: "step-1",
@@ -57,6 +57,7 @@ export const TourModal = () => {
     //   description: "",
     // },
   ];
+  console.log('modal lng', lng)
   const { tour, setTour, tourStep, setTourStep } = useModals();
   const router = useRouter();
 

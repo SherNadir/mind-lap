@@ -19,7 +19,7 @@ export default function DashboardLayout({ children, params: { lng } }) {
   return (
     <html lang={lng}>
       <body className={urbanist.className}>
-        <ModalsProvider>
+        <ModalsProvider lng={lng}>
           <main className="bg-grey-1000 ">
             <DashboardNavbar lng={lng} />
             <div className="flex h-full">

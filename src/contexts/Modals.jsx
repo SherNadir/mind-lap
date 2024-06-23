@@ -4,7 +4,7 @@ import { TourModal } from "@/components/Modals";
 
 const ModalContext = createContext(false);
 
-export const ModalsProvider = ({ children }) => {
+export const ModalsProvider = ({lng, children }) => {
   const [tour, setTour] = useState(false);
   const [tourStep, setTourStep] = useState(0);
 
@@ -21,7 +21,7 @@ export const ModalsProvider = ({ children }) => {
   return (
     <ModalContext.Provider value={value}>
       {children}
-      <TourModal />
+      <TourModal lng={lng} />
     </ModalContext.Provider>
   );
 };

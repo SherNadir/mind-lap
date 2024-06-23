@@ -17,7 +17,6 @@ import Image from "next/image";
 import Link from "next/link";
 import cls from "classnames";
 import { ArrowDownIcon } from "@/svgs/icons";
-import { navigation } from "./data";
 import { usePathname, useRouter } from "next/navigation";
 
 export const Navbar = ({ lng }) => {
@@ -228,29 +227,111 @@ export const Navbar = ({ lng }) => {
                         })}
                       </MenuItems>
                     </Transition>
-                    {navigation?.map((item, index) => {
-                      return (
-                        <Link
-                          key={index}
+                    <div className="flex flex-col lg:hidden items-center gap-4">
+                      <ul className="flex flex-col items-center gap-8">
+                        <li
                           className={cls(
-                            `flex items-center justify-between p-4 mb-2.5 w-full h-16  rounded-2xl cursor-pointer hover:bg-primary hover:text-white  ${
-                              activeLink === item.href
-                                ? "text-white bg-primary"
-                                : "text-dark"
-                            }`
+                            "font-bold text-sm cursor-pointer text-dark hover:text-primary",
+                            {
+                              "text-primary":
+                                pathname === "/en" || pathname === "/de",
+                            }
                           )}
-                          href={`/${item.href}`}
-                          onClick={close}
+                          onClick={() => router.push("/")}
                         >
-                          <div className="flex items-center">
-                            <button type="button">{item.icon}</button>
-                            <div className="ml-2.5">
-                              <p className="  text-sm	">{item.name}</p>
-                            </div>
-                          </div>
-                        </Link>
-                      );
-                    })}
+                          Home
+                        </li>
+                        <li
+                          className={cls(
+                            "font-bold text-sm cursor-pointer text-dark hover:text-primary",
+                            {
+                              "text-primary": activeLink === "/dashboard",
+                            }
+                          )}
+                          onClick={() => router.push(`/${lng}/dashboard`)}
+                        >
+                          Dashboard
+                        </li>
+                        <li
+                          className={cls(
+                            "font-bold text-sm cursor-pointer text-dark hover:text-primary",
+                            {
+                              "text-primary": activeLink === "/partners",
+                            }
+                          )}
+                          onClick={() => {
+                            const anchor = document.querySelector("#partners");
+                            anchor.scrollIntoView({
+                              behavior: "smooth",
+                              block: "center",
+                            });
+                          }}
+                        >
+                          Partners
+                        </li>
+                        <li
+                          className={cls(
+                            "font-bold text-sm cursor-pointer text-dark hover:text-primary",
+                            {
+                              "text-primary": activeLink === "/services",
+                            }
+                          )}
+                          onClick={() => {
+                            const anchor = document.querySelector("#services");
+                            anchor.scrollIntoView({
+                              behavior: "smooth",
+                              block: "center",
+                            });
+                          }}
+                        >
+                          Services
+                        </li>
+                        <li
+                          className={cls(
+                            "font-bold text-sm cursor-pointer text-dark hover:text-primary",
+                            {
+                              "text-primary": activeLink === "/roadmap",
+                            }
+                          )}
+                          onClick={() => {
+                            const anchor = document.querySelector("#roadmap");
+                            anchor.scrollIntoView({
+                              behavior: "smooth",
+                              block: "center",
+                            });
+                          }}
+                        >
+                          Roadmap
+                        </li>
+                        <li
+                          className={cls(
+                            "font-bold text-sm cursor-pointer text-dark hover:text-primary",
+                            {
+                              "text-primary": activeLink === "/team",
+                            }
+                          )}
+                          onClick={() => {
+                            const anchor = document.querySelector("#team");
+                            anchor.scrollIntoView({
+                              behavior: "smooth",
+                              block: "center",
+                            });
+                          }}
+                        >
+                          Team
+                        </li>
+                      </ul>
+                      <Link
+                        className="bg-primary w-[60px] h-8 rounded-full flex items-center  justify-center text-white hover:bg-primary-200 cursor-pointer"
+                        href={`${
+                          pathname === "/en" || pathname === "/de"
+                            ? `${lng === "en" ? "de" : "en"}`
+                            : `/${lng === "en" ? "de" : "en"}/${lastPart}`
+                        }`}
+                      >
+                        {newLocale}
+                      </Link>
+                    </div>
                   </Menu>
                 </div>
               </DisclosurePanel>
