@@ -57,7 +57,7 @@ export const Modal = ({
       )}
     >
       <div
-        className={cls`${className} bg-white  rounded-lg shadow-lg max-w-sm w-full min-h-[60vh] relative  `}
+        className={cls`${className} bg-white  rounded-lg shadow-lg max-w-sm w-full relative  `}
       >
         {/* <div
           className={`flex justify-between items-center  pb-4  ${

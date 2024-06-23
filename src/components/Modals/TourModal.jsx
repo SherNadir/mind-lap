@@ -112,7 +112,7 @@ export const TourModal = () => {
         </div> */}
         <div className="text-center flex w-full">
           <div className="relative flex items-center gap-4 w-full">
-            <div className="flex h-full flex-1 min-h-[34rem] bg-primary ">
+            <div className="flex h-full flex-1 min-h-[30rem] bg-primary ">
               <Image
                 alt={`tour-${steps[tourStep].id}`}
                 src={steps[tourStep].img}
@@ -122,7 +122,7 @@ export const TourModal = () => {
                 style={{ width: "100%", height: "100%", objectFit: "contain" }}
               />
             </div>
-            <div className="flex  h-full flex-1 min-h-[34rem] ">
+            <div className="flex  h-full flex-1 min-h-[30rem] ">
               <LinesIcon className="absolute top-0 right-0" />
 
               <div className="flex flex-col justify-center p-5 w-full">
@@ -132,28 +132,24 @@ export const TourModal = () => {
                     {steps[tourStep].description}
                   </span>
                 </p>
-                {tourStep === 0 ? (
                   <div
                     className="relative cursor-pointer flex w-11/12 flex items-center justify-end"
                     onClick={handleNext}
                   >
-                    <div className="rounded-3xl h-8 flex items-center justify-center bg-dark-700 text-primary w-20 text-sm font-bold mr-10">
+                    {tourStep === 0 ? <div><div className="rounded-3xl h-8 flex items-center justify-center bg-dark-700 text-primary w-20 text-sm font-bold mr-10">
                       Next
                     </div>
                     <div className="rounded-full w-10 h-10 bg-primary absolute flex items-center justify-center right-[20px] -top-[5px]">
                       <ArrowRightIcon className="text-white" />
-                    </div>
-                  </div>
-                ) : (
-                  <Button
+                    </div></div> : <Button
                     size="lg"
                     className="!w-fit !px-5 gap-2 !w-full !font-medium"
                     variant="primaryContained"
                     onClick={handleNext}
                   >
                     Save let&apos;s go <ArrowRightIcon />
-                  </Button>
-                )}
+                  </Button>}
+                  </div>
               </div>
             </div>
           </div>
