@@ -76,8 +76,6 @@ export const TourModal = ({ lng }) => {
     }
   };
 
-  console.log("tourStep", steps[tourStep].id === steps[steps.length - 1].id);
-
   return (
     <Modal
       id="tour"
