@@ -12,7 +12,9 @@ export const Discovery = ({ lng }) => {
     <div className="min-h-[75vh]">
       <div className="mt-10 flex flex-col gap-5">
         <div>
-          <p className="text-4xl font-medium text-dark-700">Career Explorer</p>
+          <p className="text-4xl font-medium text-dark-700">
+            {t("CAREER_EXPLORER")}
+          </p>
         </div>
         <div>
           <p className="text-sm font-normal text-dark-700">

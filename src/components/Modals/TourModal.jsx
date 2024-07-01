@@ -59,7 +59,6 @@ export const TourModal = ({ lng }) => {
     //   description: "",
     // },
   ];
-  console.log("modal lng", lng);
   const { tour, setTour, tourStep, setTourStep } = useModals();
   const router = useRouter();
 
@@ -76,6 +75,8 @@ export const TourModal = ({ lng }) => {
       setTourStep(tourStep - 1);
     }
   };
+
+  console.log("tourStep", steps[tourStep].id === steps[steps.length - 1].id);
 
   return (
     <Modal
@@ -131,7 +132,10 @@ export const TourModal = ({ lng }) => {
                       variant="primaryContained"
                       onClick={handleNext}
                     >
-                      Save let&apos;s go <ArrowRightIcon />
+                      {steps[tourStep].id === steps[steps.length - 1].id
+                        ? "Lets Go"
+                        : "Next"}{" "}
+                      <ArrowRightIcon />
                     </Button>
                   )}
                 </div>
